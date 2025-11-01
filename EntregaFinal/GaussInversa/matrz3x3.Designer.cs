@@ -1,0 +1,366 @@
+﻿namespace EntregaFinal
+{
+    partial class matrz3x3
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.txt00 = new System.Windows.Forms.TextBox();
+            this.txt21 = new System.Windows.Forms.TextBox();
+            this.txt11 = new System.Windows.Forms.TextBox();
+            this.txt20 = new System.Windows.Forms.TextBox();
+            this.txt10 = new System.Windows.Forms.TextBox();
+            this.txt01 = new System.Windows.Forms.TextBox();
+            this.txt22 = new System.Windows.Forms.TextBox();
+            this.txt12 = new System.Windows.Forms.TextBox();
+            this.txt02 = new System.Windows.Forms.TextBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.lbl00 = new System.Windows.Forms.Label();
+            this.lbl01 = new System.Windows.Forms.Label();
+            this.lbl02 = new System.Windows.Forms.Label();
+            this.lbl10 = new System.Windows.Forms.Label();
+            this.lbl11 = new System.Windows.Forms.Label();
+            this.lbl12 = new System.Windows.Forms.Label();
+            this.lbl20 = new System.Windows.Forms.Label();
+            this.lbl21 = new System.Windows.Forms.Label();
+            this.lbl22 = new System.Windows.Forms.Label();
+            this.btnlimpiar = new System.Windows.Forms.Button();
+            this.btnsalir = new System.Windows.Forms.Button();
+            this.btnvolver = new System.Windows.Forms.Button();
+            this.btnsiguiente = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // txt00
+            // 
+            this.txt00.Location = new System.Drawing.Point(77, 94);
+            this.txt00.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt00.Name = "txt00";
+            this.txt00.Size = new System.Drawing.Size(76, 20);
+            this.txt00.TabIndex = 0;
+            // 
+            // txt21
+            // 
+            this.txt21.Location = new System.Drawing.Point(180, 184);
+            this.txt21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt21.Name = "txt21";
+            this.txt21.Size = new System.Drawing.Size(76, 20);
+            this.txt21.TabIndex = 1;
+            // 
+            // txt11
+            // 
+            this.txt11.Location = new System.Drawing.Point(180, 136);
+            this.txt11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt11.Name = "txt11";
+            this.txt11.Size = new System.Drawing.Size(76, 20);
+            this.txt11.TabIndex = 2;
+            // 
+            // txt20
+            // 
+            this.txt20.Location = new System.Drawing.Point(77, 184);
+            this.txt20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt20.Name = "txt20";
+            this.txt20.Size = new System.Drawing.Size(76, 20);
+            this.txt20.TabIndex = 3;
+            // 
+            // txt10
+            // 
+            this.txt10.Location = new System.Drawing.Point(77, 136);
+            this.txt10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt10.Name = "txt10";
+            this.txt10.Size = new System.Drawing.Size(76, 20);
+            this.txt10.TabIndex = 4;
+            // 
+            // txt01
+            // 
+            this.txt01.Location = new System.Drawing.Point(180, 94);
+            this.txt01.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt01.Name = "txt01";
+            this.txt01.Size = new System.Drawing.Size(76, 20);
+            this.txt01.TabIndex = 5;
+            // 
+            // txt22
+            // 
+            this.txt22.Location = new System.Drawing.Point(275, 184);
+            this.txt22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt22.Name = "txt22";
+            this.txt22.Size = new System.Drawing.Size(76, 20);
+            this.txt22.TabIndex = 6;
+            // 
+            // txt12
+            // 
+            this.txt12.Location = new System.Drawing.Point(275, 136);
+            this.txt12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt12.Name = "txt12";
+            this.txt12.Size = new System.Drawing.Size(76, 20);
+            this.txt12.TabIndex = 7;
+            // 
+            // txt02
+            // 
+            this.txt02.Location = new System.Drawing.Point(275, 94);
+            this.txt02.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt02.Name = "txt02";
+            this.txt02.Size = new System.Drawing.Size(76, 20);
+            this.txt02.TabIndex = 8;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(63, 233);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(75, 24);
+            this.btnCalcular.TabIndex = 9;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // lbl00
+            // 
+            this.lbl00.AutoSize = true;
+            this.lbl00.Location = new System.Drawing.Point(400, 94);
+            this.lbl00.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl00.Name = "lbl00";
+            this.lbl00.Size = new System.Drawing.Size(0, 13);
+            this.lbl00.TabIndex = 10;
+            // 
+            // lbl01
+            // 
+            this.lbl01.AutoSize = true;
+            this.lbl01.Location = new System.Drawing.Point(454, 94);
+            this.lbl01.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl01.Name = "lbl01";
+            this.lbl01.Size = new System.Drawing.Size(0, 13);
+            this.lbl01.TabIndex = 11;
+            // 
+            // lbl02
+            // 
+            this.lbl02.AutoSize = true;
+            this.lbl02.Location = new System.Drawing.Point(508, 94);
+            this.lbl02.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl02.Name = "lbl02";
+            this.lbl02.Size = new System.Drawing.Size(0, 13);
+            this.lbl02.TabIndex = 12;
+            // 
+            // lbl10
+            // 
+            this.lbl10.AutoSize = true;
+            this.lbl10.Location = new System.Drawing.Point(400, 139);
+            this.lbl10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl10.Name = "lbl10";
+            this.lbl10.Size = new System.Drawing.Size(0, 13);
+            this.lbl10.TabIndex = 13;
+            // 
+            // lbl11
+            // 
+            this.lbl11.AutoSize = true;
+            this.lbl11.Location = new System.Drawing.Point(454, 139);
+            this.lbl11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl11.Name = "lbl11";
+            this.lbl11.Size = new System.Drawing.Size(0, 13);
+            this.lbl11.TabIndex = 14;
+            // 
+            // lbl12
+            // 
+            this.lbl12.AutoSize = true;
+            this.lbl12.Location = new System.Drawing.Point(508, 139);
+            this.lbl12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl12.Name = "lbl12";
+            this.lbl12.Size = new System.Drawing.Size(0, 13);
+            this.lbl12.TabIndex = 15;
+            // 
+            // lbl20
+            // 
+            this.lbl20.AutoSize = true;
+            this.lbl20.Location = new System.Drawing.Point(400, 184);
+            this.lbl20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl20.Name = "lbl20";
+            this.lbl20.Size = new System.Drawing.Size(0, 13);
+            this.lbl20.TabIndex = 16;
+            // 
+            // lbl21
+            // 
+            this.lbl21.AutoSize = true;
+            this.lbl21.Location = new System.Drawing.Point(454, 184);
+            this.lbl21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl21.Name = "lbl21";
+            this.lbl21.Size = new System.Drawing.Size(0, 13);
+            this.lbl21.TabIndex = 17;
+            // 
+            // lbl22
+            // 
+            this.lbl22.AutoSize = true;
+            this.lbl22.Location = new System.Drawing.Point(508, 184);
+            this.lbl22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl22.Name = "lbl22";
+            this.lbl22.Size = new System.Drawing.Size(0, 13);
+            this.lbl22.TabIndex = 18;
+            // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.Location = new System.Drawing.Point(162, 233);
+            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(66, 24);
+            this.btnlimpiar.TabIndex = 19;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
+            // 
+            // btnsalir
+            // 
+            this.btnsalir.Location = new System.Drawing.Point(259, 233);
+            this.btnsalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(63, 24);
+            this.btnsalir.TabIndex = 20;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // btnvolver
+            // 
+            this.btnvolver.Location = new System.Drawing.Point(22, 317);
+            this.btnvolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnvolver.Name = "btnvolver";
+            this.btnvolver.Size = new System.Drawing.Size(80, 19);
+            this.btnvolver.TabIndex = 21;
+            this.btnvolver.Text = "Volver";
+            this.btnvolver.UseVisualStyleBackColor = true;
+            this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
+            // 
+            // btnsiguiente
+            // 
+            this.btnsiguiente.Location = new System.Drawing.Point(419, 317);
+            this.btnsiguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsiguiente.Name = "btnsiguiente";
+            this.btnsiguiente.Size = new System.Drawing.Size(74, 19);
+            this.btnsiguiente.TabIndex = 22;
+            this.btnsiguiente.Text = "Siguiente";
+            this.btnsiguiente.UseVisualStyleBackColor = true;
+            this.btnsiguiente.Click += new System.EventHandler(this.btnsiguiente_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(106, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 13);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "X";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(302, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 13);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "X3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(208, 66);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "X2";
+            // 
+            // matrz3x3
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnsiguiente);
+            this.Controls.Add(this.btnvolver);
+            this.Controls.Add(this.btnsalir);
+            this.Controls.Add(this.btnlimpiar);
+            this.Controls.Add(this.lbl22);
+            this.Controls.Add(this.lbl21);
+            this.Controls.Add(this.lbl20);
+            this.Controls.Add(this.lbl12);
+            this.Controls.Add(this.lbl11);
+            this.Controls.Add(this.lbl10);
+            this.Controls.Add(this.lbl02);
+            this.Controls.Add(this.lbl01);
+            this.Controls.Add(this.lbl00);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.txt02);
+            this.Controls.Add(this.txt12);
+            this.Controls.Add(this.txt22);
+            this.Controls.Add(this.txt01);
+            this.Controls.Add(this.txt10);
+            this.Controls.Add(this.txt20);
+            this.Controls.Add(this.txt11);
+            this.Controls.Add(this.txt21);
+            this.Controls.Add(this.txt00);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "matrz3x3";
+            this.Text = "matrz3x3";
+            this.Load += new System.EventHandler(this.matrz3x3_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox txt00;
+        private System.Windows.Forms.TextBox txt21;
+        private System.Windows.Forms.TextBox txt11;
+        private System.Windows.Forms.TextBox txt20;
+        private System.Windows.Forms.TextBox txt10;
+        private System.Windows.Forms.TextBox txt01;
+        private System.Windows.Forms.TextBox txt22;
+        private System.Windows.Forms.TextBox txt12;
+        private System.Windows.Forms.TextBox txt02;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label lbl00;
+        private System.Windows.Forms.Label lbl01;
+        private System.Windows.Forms.Label lbl02;
+        private System.Windows.Forms.Label lbl10;
+        private System.Windows.Forms.Label lbl11;
+        private System.Windows.Forms.Label lbl12;
+        private System.Windows.Forms.Label lbl20;
+        private System.Windows.Forms.Label lbl21;
+        private System.Windows.Forms.Label lbl22;
+        private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Button btnvolver;
+        private System.Windows.Forms.Button btnsiguiente;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+    }
+}
