@@ -22,6 +22,7 @@
             ClientSize = new System.Drawing.Size(944, 548);
             Name = "MainMenu";
             Text = "MainMenu";
+            Load += MainMenu_Load;
             ResumeLayout(false);
         }
     }
