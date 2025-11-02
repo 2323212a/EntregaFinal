@@ -9,6 +9,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="fotos\arbusto.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="fotos\arbusto.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="CoreCLR-NCalc" Version="3.1.253" />
 	  <PackageReference Include="ncalc" Version="1.3.8" />
 	  <PackageReference Include="System.Speech" Version="9.0.10" />

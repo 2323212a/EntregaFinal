@@ -14,79 +14,87 @@ namespace EntregaFinal
         {
             InitializeComponent();
             CrearInterfaz();
+            this.FormClosed += (s, e) => VolverMenu();
         }
 
         private void CrearInterfaz()
         {
-            // Configuración general del formulario
+            // Configuración del formulario
             this.Text = "Raíces de Polinomios";
             this.BackColor = Color.FromArgb(240, 245, 255);
-            this.ClientSize = new Size(900, 600);
+            this.ClientSize = new Size(1200, 800);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
 
-            // Título principal
-            Label lblTitulo = new Label
-            {
-                Text = "Métodos para encontrar raíces de polinomios",
-                Font = new Font("Segoe UI", 18, FontStyle.Bold),
-                ForeColor = Color.FromArgb(40, 60, 150),
-                AutoSize = false,
-                TextAlign = ContentAlignment.MiddleCenter,
-                Dock = DockStyle.Top,
-                Height = 90
-            };
-            this.Controls.Add(lblTitulo);
-
-            // Panel para los botones
-            FlowLayoutPanel panel = new FlowLayoutPanel
+            // Layout principal
+            var layoutPrincipal = new TableLayoutPanel
             {
                 Dock = DockStyle.Fill,
-                FlowDirection = FlowDirection.TopDown,
-                Padding = new Padding(0, 40, 0, 0),
-                WrapContents = false,
+                RowCount = 2,
+                ColumnCount = 1,
+                BackColor = Color.Transparent,
+                Padding = new Padding(20),
                 AutoScroll = true
             };
-            this.Controls.Add(panel);
+            layoutPrincipal.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            layoutPrincipal.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            this.Controls.Add(layoutPrincipal);
+
+            // Título
+            var lblTitulo = new Label
+            {
+                Text = "Métodos para encontrar raíces de polinomios",
+                Font = new Font("Segoe UI", 26, FontStyle.Bold),
+                ForeColor = Color.FromArgb(40, 60, 150),
+                AutoSize = false,
+                Dock = DockStyle.Fill,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Padding = new Padding(0, 30, 0, 30),
+                BackColor = Color.FromArgb(245, 250, 255)
+            };
+            layoutPrincipal.Controls.Add(lblTitulo, 0, 0);
+
+            // Panel para los botones
+            var panelBotones = new FlowLayoutPanel
+            {
+                FlowDirection = FlowDirection.TopDown,
+                Dock = DockStyle.Fill,
+                AutoScroll = true,
+                WrapContents = false,
+                Padding = new Padding(0, 20, 0, 20),
+                BackColor = Color.Transparent
+            };
+            layoutPrincipal.Controls.Add(panelBotones, 0, 1);
 
             // Botones
-            Button btnBolzano = CrearBoton("Método de Bolzano (Bisección)", () => AbrirFormulario(new Bolzano()));
-            Button btnRegulaFalsi = CrearBoton("Método de Regula Falsi", () => AbrirFormulario(new Falsi()));
-            Button btnNewtonRaphson = CrearBoton("Método de Newton-Raphson", () => MessageBox.Show("Aún no implementado"));
-            Button btnSecante = CrearBoton("Método de la Secante", () => MessageBox.Show("Aún no implementado"));
-            Button btnVolver = CrearBoton("Volver al Menú Principal", () => VolverMenu());
-
-            panel.Controls.AddRange(new Control[]
-            {
-                btnBolzano,
-                btnRegulaFalsi,
-                btnNewtonRaphson,
-                btnSecante,
-                btnVolver
-            });
+            panelBotones.Controls.Add(CrearBoton("Método de Bolzano (Bisección)", () => AbrirFormulario(new Bolzano())));
+            panelBotones.Controls.Add(CrearBoton("Método de Regula Falsi", () => AbrirFormulario(new Falsi())));
+            panelBotones.Controls.Add(CrearBoton("Método de Newton-Raphson", () => AbrirFormulario(new Newton1())));
+            panelBotones.Controls.Add(CrearBoton("Método de la Secante", () => AbrirFormulario(new Secante1())));
+            panelBotones.Controls.Add(CrearBoton("⬅ Volver al Menú Principal", () => VolverMenu(), true));
         }
 
-        private Button CrearBoton(string texto, Action accion)
+        private Button CrearBoton(string texto, Action accion, bool botonVerde = false)
         {
-            Button btn = new Button
+            var btn = new Button
             {
                 Text = texto,
-                Font = new Font("Segoe UI", 14, FontStyle.Bold),
-                Size = new Size(450, 60),
-                BackColor = Color.FromArgb(80, 110, 200),
+                Font = new Font("Segoe UI", 18, FontStyle.Bold),
+                AutoSize = false,
+                Size = new Size(700, 90), // Más ancho y alto para que no se corte
+                BackColor = botonVerde ? Color.FromArgb(90, 150, 90) : Color.FromArgb(80, 110, 200),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
+                Margin = new Padding(15),
                 Cursor = Cursors.Hand,
-                Margin = new Padding(10),
                 TextAlign = ContentAlignment.MiddleCenter
             };
             btn.FlatAppearance.BorderSize = 0;
             btn.Click += (s, e) => accion();
 
-            // Hover
-            btn.MouseEnter += (s, e) => btn.BackColor = Color.FromArgb(100, 130, 220);
-            btn.MouseLeave += (s, e) => btn.BackColor = Color.FromArgb(80, 110, 200);
+            // Efecto hover
+            btn.MouseEnter += (s, e) => btn.BackColor = botonVerde ? Color.FromArgb(110, 180, 110) : Color.FromArgb(100, 130, 220);
+            btn.MouseLeave += (s, e) => btn.BackColor = botonVerde ? Color.FromArgb(90, 150, 90) : Color.FromArgb(80, 110, 200);
 
             return btn;
         }
@@ -95,12 +103,12 @@ namespace EntregaFinal
         {
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
-            this.Hide(); // Oculta el formulario actual
+            this.Hide();
         }
 
         private void VolverMenu()
         {
-            MainMenu menu = new MainMenu();
+            var menu = new MainMenu();
             menu.StartPosition = FormStartPosition.CenterScreen;
             menu.Show();
             this.Hide();

@@ -67,7 +67,24 @@ namespace EntregaFinal
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            Close();
+
+            // Intentar obtener el formulario MainMenu si ya está abierto
+            Form mainMenu = Application.OpenForms["MainMenu"];
+
+            if (mainMenu != null)
+            {
+                // Si ya existe, solo lo mostramos
+                mainMenu.Show();
+            }
+            else
+            {
+                // Si no existe, lo creamos
+                mainMenu = new MainMenu();
+                mainMenu.Show();
+            }
+
+            // Cerrar este formulario
+            this.Close();
         }
 
         private void btnlimpiar_Click(object sender, EventArgs e)

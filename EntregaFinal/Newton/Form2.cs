@@ -10,14 +10,21 @@ using System.Windows.Forms;
 
 namespace EntregaFinal.Newton
 {
-    public partial class Form2 : Form
+    public partial class Newton1: Form
     {
-        public Form2()
+        public Newton1()
         {
             InitializeComponent();
+            this.FormClosed += (s, e) => VolverMenu();
+        }
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
         }
 
-        
 
         private void Form2_Load(object sender, EventArgs e)
         {

@@ -28,144 +28,167 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblInfo = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.txtError = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dgvBiseccion = new System.Windows.Forms.DataGridView();
-            this.lblRaiz = new System.Windows.Forms.Label();
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBiseccion)).BeginInit();
-            this.SuspendLayout();
+            lblInfo = new System.Windows.Forms.Label();
+            panel1 = new System.Windows.Forms.Panel();
+            btnCalcular = new System.Windows.Forms.Button();
+            txtError = new System.Windows.Forms.TextBox();
+            label2 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            dgvBiseccion = new System.Windows.Forms.DataGridView();
+            lblRaiz = new System.Windows.Forms.Label();
+            btnRegresar = new System.Windows.Forms.Button();
+            btnMainMenu = new System.Windows.Forms.Button();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvBiseccion).BeginInit();
+            SuspendLayout();
             // 
             // lblInfo
             // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.lblInfo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblInfo.Location = new System.Drawing.Point(44, 47);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(31, 25);
-            this.lblInfo.TabIndex = 0;
-            this.lblInfo.Text = "ds";
+            lblInfo.AutoSize = true;
+            lblInfo.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            lblInfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            lblInfo.Location = new System.Drawing.Point(59, 72);
+            lblInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblInfo.Name = "lblInfo";
+            lblInfo.Size = new System.Drawing.Size(38, 32);
+            lblInfo.TabIndex = 0;
+            lblInfo.Text = "ds";
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.btnCalcular);
-            this.panel1.Controls.Add(this.txtError);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lblInfo);
-            this.panel1.Location = new System.Drawing.Point(24, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(827, 116);
-            this.panel1.TabIndex = 1;
+            panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            panel1.Controls.Add(btnCalcular);
+            panel1.Controls.Add(txtError);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblInfo);
+            panel1.Location = new System.Drawing.Point(32, 18);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(1101, 176);
+            panel1.TabIndex = 1;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(101)))), ((int)(((byte)(242)))));
-            this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalcular.FlatAppearance.BorderSize = 0;
-            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCalcular.ForeColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(693, 73);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(111, 36);
-            this.btnCalcular.TabIndex = 4;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = false;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            btnCalcular.BackColor = System.Drawing.Color.FromArgb(88, 101, 242);
+            btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnCalcular.FlatAppearance.BorderSize = 0;
+            btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCalcular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            btnCalcular.ForeColor = System.Drawing.Color.White;
+            btnCalcular.Location = new System.Drawing.Point(924, 112);
+            btnCalcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new System.Drawing.Size(148, 55);
+            btnCalcular.TabIndex = 4;
+            btnCalcular.Text = "Calcular";
+            btnCalcular.UseVisualStyleBackColor = false;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // txtError
             // 
-            this.txtError.BackColor = System.Drawing.Color.LightGray;
-            this.txtError.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtError.Location = new System.Drawing.Point(710, 7);
-            this.txtError.Name = "txtError";
-            this.txtError.Size = new System.Drawing.Size(94, 33);
-            this.txtError.TabIndex = 3;
+            txtError.BackColor = System.Drawing.Color.LightGray;
+            txtError.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            txtError.Location = new System.Drawing.Point(947, 11);
+            txtError.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            txtError.Name = "txtError";
+            txtError.Size = new System.Drawing.Size(124, 39);
+            txtError.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(448, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Ingresa el error aproximado: ";
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            label2.Location = new System.Drawing.Point(597, 20);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(320, 32);
+            label2.TabIndex = 2;
+            label2.Text = "Ingresa el error aproximado: ";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(44, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Datos: ";
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            label1.Location = new System.Drawing.Point(59, 20);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(87, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Datos: ";
             // 
             // dgvBiseccion
             // 
-            this.dgvBiseccion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBiseccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBiseccion.Location = new System.Drawing.Point(64, 145);
-            this.dgvBiseccion.Name = "dgvBiseccion";
-            this.dgvBiseccion.Size = new System.Drawing.Size(1007, 327);
-            this.dgvBiseccion.TabIndex = 2;
+            dgvBiseccion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dgvBiseccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvBiseccion.Location = new System.Drawing.Point(85, 223);
+            dgvBiseccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            dgvBiseccion.Name = "dgvBiseccion";
+            dgvBiseccion.RowHeadersWidth = 51;
+            dgvBiseccion.Size = new System.Drawing.Size(1343, 503);
+            dgvBiseccion.TabIndex = 2;
             // 
             // lblRaiz
             // 
-            this.lblRaiz.AutoSize = true;
-            this.lblRaiz.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.lblRaiz.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblRaiz.Location = new System.Drawing.Point(876, 29);
-            this.lblRaiz.Name = "lblRaiz";
-            this.lblRaiz.Size = new System.Drawing.Size(43, 25);
-            this.lblRaiz.TabIndex = 5;
-            this.lblRaiz.Text = "raiz";
+            lblRaiz.AutoSize = true;
+            lblRaiz.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            lblRaiz.ForeColor = System.Drawing.Color.WhiteSmoke;
+            lblRaiz.Location = new System.Drawing.Point(1168, 45);
+            lblRaiz.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblRaiz.Name = "lblRaiz";
+            lblRaiz.Size = new System.Drawing.Size(51, 32);
+            lblRaiz.TabIndex = 5;
+            lblRaiz.Text = "raiz";
             // 
             // btnRegresar
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(101)))), ((int)(((byte)(242)))));
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(965, 103);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(148, 36);
-            this.btnRegresar.TabIndex = 5;
-            this.btnRegresar.Text = "Nueva Funcion";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            btnRegresar.BackColor = System.Drawing.Color.FromArgb(88, 101, 242);
+            btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnRegresar.FlatAppearance.BorderSize = 0;
+            btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnRegresar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            btnRegresar.ForeColor = System.Drawing.Color.White;
+            btnRegresar.Location = new System.Drawing.Point(1287, 158);
+            btnRegresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new System.Drawing.Size(197, 55);
+            btnRegresar.TabIndex = 5;
+            btnRegresar.Text = "Nueva Funcion";
+            btnRegresar.UseVisualStyleBackColor = false;
+            btnRegresar.Click += btnRegresar_Click;
+            // 
+            // btnMainMenu
+            // 
+            btnMainMenu.Location = new System.Drawing.Point(1273, 108);
+            btnMainMenu.Name = "btnMainMenu";
+            btnMainMenu.Size = new System.Drawing.Size(176, 29);
+            btnMainMenu.TabIndex = 6;
+            btnMainMenu.Text = "Regresar al menu inicial";
+            btnMainMenu.UseVisualStyleBackColor = true;
+            btnMainMenu.Click += btnMainMenu_Click;
             // 
             // Soluciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(1140, 484);
-            this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.lblRaiz);
-            this.Controls.Add(this.dgvBiseccion);
-            this.Controls.Add(this.panel1);
-            this.Name = "Soluciones";
-            this.Text = "Soluciones";
-            this.Load += new System.EventHandler(this.Soluciones_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBiseccion)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(20, 18, 46);
+            ClientSize = new System.Drawing.Size(1520, 745);
+            Controls.Add(btnMainMenu);
+            Controls.Add(btnRegresar);
+            Controls.Add(lblRaiz);
+            Controls.Add(dgvBiseccion);
+            Controls.Add(panel1);
+            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            Name = "Soluciones";
+            Text = "Soluciones";
+            Load += Soluciones_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvBiseccion).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -180,5 +203,6 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label lblRaiz;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnMainMenu;
     }
 }

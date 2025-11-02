@@ -28,152 +28,160 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblInstrucciones = new System.Windows.Forms.Label();
-            this.lblResultados = new System.Windows.Forms.Label();
-            this.dgvMatriz = new System.Windows.Forms.DataGridView();
-            this.btnResolver = new System.Windows.Forms.Button();
-            this.txtResultados = new System.Windows.Forms.RichTextBox();
-            this.lblEcuaciones = new System.Windows.Forms.Label();
-            this.txtEcuaciones = new System.Windows.Forms.TextBox();
-            this.lblVariables = new System.Windows.Forms.Label();
-            this.txtVariables = new System.Windows.Forms.TextBox();
-            this.btnCrearMatriz = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMatriz)).BeginInit();
-            this.SuspendLayout();
+            lblTitulo = new System.Windows.Forms.Label();
+            lblInstrucciones = new System.Windows.Forms.Label();
+            lblResultados = new System.Windows.Forms.Label();
+            dgvMatriz = new System.Windows.Forms.DataGridView();
+            btnResolver = new System.Windows.Forms.Button();
+            txtResultados = new System.Windows.Forms.RichTextBox();
+            lblEcuaciones = new System.Windows.Forms.Label();
+            txtEcuaciones = new System.Windows.Forms.TextBox();
+            lblVariables = new System.Windows.Forms.Label();
+            txtVariables = new System.Windows.Forms.TextBox();
+            btnCrearMatriz = new System.Windows.Forms.Button();
+            btnLimpiar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)dgvMatriz).BeginInit();
+            SuspendLayout();
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(471, 9);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(180, 16);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Solucionador de Ecuaciones";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Location = new System.Drawing.Point(386, 29);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new System.Drawing.Size(195, 20);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Solucionador de Ecuaciones";
             // 
             // lblInstrucciones
             // 
-            this.lblInstrucciones.AutoSize = true;
-            this.lblInstrucciones.Location = new System.Drawing.Point(72, 118);
-            this.lblInstrucciones.Name = "lblInstrucciones";
-            this.lblInstrucciones.Size = new System.Drawing.Size(179, 16);
-            this.lblInstrucciones.TabIndex = 1;
-            this.lblInstrucciones.Text = "Ingresa la matriz del sistema:";
+            lblInstrucciones.AutoSize = true;
+            lblInstrucciones.Location = new System.Drawing.Point(31, 29);
+            lblInstrucciones.Name = "lblInstrucciones";
+            lblInstrucciones.Size = new System.Drawing.Size(201, 20);
+            lblInstrucciones.TabIndex = 1;
+            lblInstrucciones.Text = "Ingresa la matriz del sistema:";
             // 
             // lblResultados
             // 
-            this.lblResultados.AutoSize = true;
-            this.lblResultados.Location = new System.Drawing.Point(764, 169);
-            this.lblResultados.Name = "lblResultados";
-            this.lblResultados.Size = new System.Drawing.Size(79, 16);
-            this.lblResultados.TabIndex = 2;
-            this.lblResultados.Text = "Resultados:";
+            lblResultados.AutoSize = true;
+            lblResultados.Location = new System.Drawing.Point(919, 11);
+            lblResultados.Name = "lblResultados";
+            lblResultados.Size = new System.Drawing.Size(84, 20);
+            lblResultados.TabIndex = 2;
+            lblResultados.Text = "Resultados:";
             // 
             // dgvMatriz
             // 
-            this.dgvMatriz.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMatriz.Location = new System.Drawing.Point(302, 55);
-            this.dgvMatriz.Name = "dgvMatriz";
-            this.dgvMatriz.RowHeadersWidth = 51;
-            this.dgvMatriz.RowTemplate.Height = 24;
-            this.dgvMatriz.Size = new System.Drawing.Size(384, 223);
-            this.dgvMatriz.TabIndex = 3;
+            dgvMatriz.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMatriz.Location = new System.Drawing.Point(386, 84);
+            dgvMatriz.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dgvMatriz.Name = "dgvMatriz";
+            dgvMatriz.RowHeadersWidth = 51;
+            dgvMatriz.RowTemplate.Height = 24;
+            dgvMatriz.Size = new System.Drawing.Size(366, 279);
+            dgvMatriz.TabIndex = 3;
             // 
             // btnResolver
             // 
-            this.btnResolver.Location = new System.Drawing.Point(450, 308);
-            this.btnResolver.Name = "btnResolver";
-            this.btnResolver.Size = new System.Drawing.Size(107, 53);
-            this.btnResolver.TabIndex = 4;
-            this.btnResolver.Text = "Resolver";
-            this.btnResolver.UseVisualStyleBackColor = true;
-            this.btnResolver.Click += new System.EventHandler(this.btnResolver_Click);
+            btnResolver.Location = new System.Drawing.Point(210, 417);
+            btnResolver.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnResolver.Name = "btnResolver";
+            btnResolver.Size = new System.Drawing.Size(118, 80);
+            btnResolver.TabIndex = 4;
+            btnResolver.Text = "Resolver";
+            btnResolver.UseVisualStyleBackColor = true;
+            btnResolver.Click += btnResolver_Click;
             // 
             // txtResultados
             // 
-            this.txtResultados.Location = new System.Drawing.Point(855, 55);
-            this.txtResultados.Name = "txtResultados";
-            this.txtResultados.Size = new System.Drawing.Size(390, 223);
-            this.txtResultados.TabIndex = 5;
-            this.txtResultados.Text = "";
+            txtResultados.Location = new System.Drawing.Point(798, 84);
+            txtResultados.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtResultados.Name = "txtResultados";
+            txtResultados.Size = new System.Drawing.Size(321, 279);
+            txtResultados.TabIndex = 5;
+            txtResultados.Text = "";
             // 
             // lblEcuaciones
             // 
-            this.lblEcuaciones.AutoSize = true;
-            this.lblEcuaciones.Location = new System.Drawing.Point(207, 186);
-            this.lblEcuaciones.Name = "lblEcuaciones";
-            this.lblEcuaciones.Size = new System.Drawing.Size(78, 16);
-            this.lblEcuaciones.TabIndex = 6;
-            this.lblEcuaciones.Text = "Ecuaciones";
+            lblEcuaciones.AutoSize = true;
+            lblEcuaciones.Location = new System.Drawing.Point(150, 92);
+            lblEcuaciones.Name = "lblEcuaciones";
+            lblEcuaciones.Size = new System.Drawing.Size(82, 20);
+            lblEcuaciones.TabIndex = 6;
+            lblEcuaciones.Text = "Ecuaciones";
             // 
             // txtEcuaciones
             // 
-            this.txtEcuaciones.Location = new System.Drawing.Point(180, 227);
-            this.txtEcuaciones.Name = "txtEcuaciones";
-            this.txtEcuaciones.Size = new System.Drawing.Size(100, 22);
-            this.txtEcuaciones.TabIndex = 7;
+            txtEcuaciones.Location = new System.Drawing.Point(150, 134);
+            txtEcuaciones.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtEcuaciones.Name = "txtEcuaciones";
+            txtEcuaciones.Size = new System.Drawing.Size(82, 27);
+            txtEcuaciones.TabIndex = 7;
             // 
             // lblVariables
             // 
-            this.lblVariables.AutoSize = true;
-            this.lblVariables.Location = new System.Drawing.Point(28, 186);
-            this.lblVariables.Name = "lblVariables";
-            this.lblVariables.Size = new System.Drawing.Size(65, 16);
-            this.lblVariables.TabIndex = 8;
-            this.lblVariables.Text = "Variables";
+            lblVariables.AutoSize = true;
+            lblVariables.Location = new System.Drawing.Point(31, 92);
+            lblVariables.Name = "lblVariables";
+            lblVariables.Size = new System.Drawing.Size(69, 20);
+            lblVariables.TabIndex = 8;
+            lblVariables.Text = "Variables";
             // 
             // txtVariables
             // 
-            this.txtVariables.Location = new System.Drawing.Point(31, 227);
-            this.txtVariables.Name = "txtVariables";
-            this.txtVariables.Size = new System.Drawing.Size(100, 22);
-            this.txtVariables.TabIndex = 9;
+            txtVariables.Location = new System.Drawing.Point(31, 134);
+            txtVariables.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtVariables.Name = "txtVariables";
+            txtVariables.Size = new System.Drawing.Size(69, 27);
+            txtVariables.TabIndex = 9;
             // 
             // btnCrearMatriz
             // 
-            this.btnCrearMatriz.Location = new System.Drawing.Point(100, 281);
-            this.btnCrearMatriz.Name = "btnCrearMatriz";
-            this.btnCrearMatriz.Size = new System.Drawing.Size(118, 64);
-            this.btnCrearMatriz.TabIndex = 10;
-            this.btnCrearMatriz.Text = "Crear Matriz";
-            this.btnCrearMatriz.UseVisualStyleBackColor = true;
-            this.btnCrearMatriz.Click += new System.EventHandler(this.btnCrearMatriz_Click);
+            btnCrearMatriz.Location = new System.Drawing.Point(31, 417);
+            btnCrearMatriz.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnCrearMatriz.Name = "btnCrearMatriz";
+            btnCrearMatriz.Size = new System.Drawing.Size(118, 80);
+            btnCrearMatriz.TabIndex = 10;
+            btnCrearMatriz.Text = "Crear Matriz";
+            btnCrearMatriz.UseVisualStyleBackColor = true;
+            btnCrearMatriz.Click += btnCrearMatriz_Click;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(669, 367);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(266, 44);
-            this.btnLimpiar.TabIndex = 11;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            btnLimpiar.Location = new System.Drawing.Point(416, 417);
+            btnLimpiar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new System.Drawing.Size(266, 80);
+            btnLimpiar.TabIndex = 11;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
-            // Form1
+            // Gauss
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1321, 450);
-            this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnCrearMatriz);
-            this.Controls.Add(this.txtVariables);
-            this.Controls.Add(this.lblVariables);
-            this.Controls.Add(this.txtEcuaciones);
-            this.Controls.Add(this.lblEcuaciones);
-            this.Controls.Add(this.txtResultados);
-            this.Controls.Add(this.btnResolver);
-            this.Controls.Add(this.dgvMatriz);
-            this.Controls.Add(this.lblResultados);
-            this.Controls.Add(this.lblInstrucciones);
-            this.Controls.Add(this.lblTitulo);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMatriz)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.WindowFrame;
+            ClientSize = new System.Drawing.Size(1321, 562);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnCrearMatriz);
+            Controls.Add(txtVariables);
+            Controls.Add(lblVariables);
+            Controls.Add(txtEcuaciones);
+            Controls.Add(lblEcuaciones);
+            Controls.Add(txtResultados);
+            Controls.Add(btnResolver);
+            Controls.Add(dgvMatriz);
+            Controls.Add(lblResultados);
+            Controls.Add(lblInstrucciones);
+            Controls.Add(lblTitulo);
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "Gauss";
+            Text = "Solucionador Gauss";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvMatriz).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -192,4 +200,3 @@
         private System.Windows.Forms.Button btnLimpiar;
     }
 }
-

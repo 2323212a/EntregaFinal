@@ -15,8 +15,15 @@ namespace EntregaFinal
         public Gauss()
         {
             InitializeComponent();
+            this.FormClosed += (s, e) => VolverMenu();
         }
-
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             int numVariables = 3;
@@ -207,6 +214,11 @@ namespace EntregaFinal
 
             // Limpia el RichTextBox de resultados
             txtResultados.Clear();
+
+        }
+
+        private void dgvMatriz_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

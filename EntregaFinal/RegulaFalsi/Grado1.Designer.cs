@@ -19,312 +19,378 @@ namespace EntregaFinal.RegulaFalsi
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grado1));
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtL2 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtL1 = new System.Windows.Forms.TextBox();
-            this.btnContinuar1 = new System.Windows.Forms.Button();
-            this.lblLimpiar2 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblLimpiar1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblResultado = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnEvaluar = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txta1 = new System.Windows.Forms.TextBox();
-            this.txta0 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblFuncionRecibida = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
-
+            panel4 = new Panel();
+            label14 = new Label();
+            txtL2 = new TextBox();
+            label13 = new Label();
+            txtL1 = new TextBox();
+            btnContinuar1 = new Button();
+            lblLimpiar2 = new Button();
+            label11 = new Label();
+            label12 = new Label();
+            panel3 = new Panel();
+            lblLimpiar1 = new Button();
+            label7 = new Label();
+            lblResultado = new Label();
+            panel2 = new Panel();
+            label10 = new Label();
+            label9 = new Label();
+            btnEvaluar = new Button();
+            label6 = new Label();
+            label5 = new Label();
+            txta1 = new TextBox();
+            txta0 = new TextBox();
+            label3 = new Label();
+            panel1 = new Panel();
+            label1 = new Label();
+            lblFuncionRecibida = new Label();
+            label2 = new Label();
+            panel4.SuspendLayout();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.txtL2);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Controls.Add(this.txtL1);
-            this.panel4.Controls.Add(this.btnContinuar1);
-            this.panel4.Controls.Add(this.lblLimpiar2);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Location = new System.Drawing.Point(533, 289);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(497, 201);
-            this.panel4.TabIndex = 25;
+            panel4.BorderStyle = BorderStyle.Fixed3D;
+            panel4.Controls.Add(label14);
+            panel4.Controls.Add(txtL2);
+            panel4.Controls.Add(label13);
+            panel4.Controls.Add(txtL1);
+            panel4.Controls.Add(btnContinuar1);
+            panel4.Controls.Add(lblLimpiar2);
+            panel4.Controls.Add(label11);
+            panel4.Controls.Add(label12);
+            panel4.Location = new Point(533, 361);
+            panel4.Margin = new Padding(3, 4, 3, 4);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(497, 250);
+            panel4.TabIndex = 25;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(225, 48);
-            this.label14.Text = ",";
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 27.75F);
+            label14.ForeColor = Color.Black;
+            label14.Location = new Point(225, 60);
+            label14.Name = "label14";
+            label14.Size = new Size(37, 62);
+            label14.TabIndex = 0;
+            label14.Text = ",";
             // 
             // txtL2
             // 
-            this.txtL2.BackColor = System.Drawing.Color.LightGray;
-            this.txtL2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtL2.Location = new System.Drawing.Point(272, 58);
-            this.txtL2.Size = new System.Drawing.Size(47, 39);
+            txtL2.BackColor = Color.LightGray;
+            txtL2.Font = new Font("Segoe UI", 14.25F);
+            txtL2.Location = new Point(272, 72);
+            txtL2.Margin = new Padding(3, 4, 3, 4);
+            txtL2.Name = "txtL2";
+            txtL2.Size = new Size(47, 39);
+            txtL2.TabIndex = 1;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(324, 41);
-            this.label13.Text = "]";
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 27.75F);
+            label13.ForeColor = Color.Black;
+            label13.Location = new Point(324, 51);
+            label13.Name = "label13";
+            label13.Size = new Size(41, 62);
+            label13.TabIndex = 2;
+            label13.Text = "]";
             // 
             // txtL1
             // 
-            this.txtL1.BackColor = System.Drawing.Color.LightGray;
-            this.txtL1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtL1.Location = new System.Drawing.Point(169, 58);
-            this.txtL1.Size = new System.Drawing.Size(47, 39);
+            txtL1.BackColor = Color.LightGray;
+            txtL1.Font = new Font("Segoe UI", 14.25F);
+            txtL1.Location = new Point(169, 72);
+            txtL1.Margin = new Padding(3, 4, 3, 4);
+            txtL1.Name = "txtL1";
+            txtL1.Size = new Size(47, 39);
+            txtL1.TabIndex = 3;
             // 
             // btnContinuar1
             // 
-            this.btnContinuar1.BackColor = System.Drawing.Color.FromArgb(88, 101, 242);
-            this.btnContinuar1.FlatAppearance.BorderSize = 0;
-            this.btnContinuar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContinuar1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnContinuar1.ForeColor = System.Drawing.Color.White;
-            this.btnContinuar1.Location = new System.Drawing.Point(313, 133);
-            this.btnContinuar1.Size = new System.Drawing.Size(131, 46);
-            this.btnContinuar1.Text = "Continuar";
-            this.btnContinuar1.UseVisualStyleBackColor = false;
-            this.btnContinuar1.Click += new System.EventHandler(this.btnContinuar1_Click);
+            btnContinuar1.BackColor = Color.FromArgb(88, 101, 242);
+            btnContinuar1.FlatAppearance.BorderSize = 0;
+            btnContinuar1.FlatStyle = FlatStyle.Flat;
+            btnContinuar1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnContinuar1.ForeColor = Color.White;
+            btnContinuar1.Location = new Point(313, 166);
+            btnContinuar1.Margin = new Padding(3, 4, 3, 4);
+            btnContinuar1.Name = "btnContinuar1";
+            btnContinuar1.Size = new Size(131, 58);
+            btnContinuar1.TabIndex = 4;
+            btnContinuar1.Text = "Continuar";
+            btnContinuar1.UseVisualStyleBackColor = false;
+            btnContinuar1.Click += btnContinuar1_Click;
             // 
             // lblLimpiar2
             // 
-            this.lblLimpiar2.BackColor = System.Drawing.Color.FromArgb(88, 101, 242);
-            this.lblLimpiar2.FlatAppearance.BorderSize = 0;
-            this.lblLimpiar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblLimpiar2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblLimpiar2.ForeColor = System.Drawing.Color.White;
-            this.lblLimpiar2.Location = new System.Drawing.Point(48, 133);
-            this.lblLimpiar2.Size = new System.Drawing.Size(127, 46);
-            this.lblLimpiar2.Text = "Limpiar";
-            this.lblLimpiar2.UseVisualStyleBackColor = false;
-            this.lblLimpiar2.Click += new System.EventHandler(this.lblLimpiar2_Click);
+            lblLimpiar2.BackColor = Color.FromArgb(88, 101, 242);
+            lblLimpiar2.FlatAppearance.BorderSize = 0;
+            lblLimpiar2.FlatStyle = FlatStyle.Flat;
+            lblLimpiar2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblLimpiar2.ForeColor = Color.White;
+            lblLimpiar2.Location = new Point(48, 166);
+            lblLimpiar2.Margin = new Padding(3, 4, 3, 4);
+            lblLimpiar2.Name = "lblLimpiar2";
+            lblLimpiar2.Size = new Size(127, 58);
+            lblLimpiar2.TabIndex = 5;
+            lblLimpiar2.Text = "Limpiar";
+            lblLimpiar2.UseVisualStyleBackColor = false;
+            lblLimpiar2.Click += lblLimpiar2_Click;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(16, 11);
-            this.label11.Text = "Límites";
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 15.75F);
+            label11.ForeColor = Color.Black;
+            label11.Location = new Point(16, 14);
+            label11.Name = "label11";
+            label11.Size = new Size(101, 37);
+            label11.TabIndex = 6;
+            label11.Text = "Límites";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(131, 41);
-            this.label12.Text = "[";
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 27.75F);
+            label12.ForeColor = Color.Black;
+            label12.Location = new Point(131, 51);
+            label12.Name = "label12";
+            label12.Size = new Size(41, 62);
+            label12.TabIndex = 7;
+            label12.Text = "[";
             // 
             // panel3
             // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.lblLimpiar1);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.lblResultado);
-            this.panel3.Location = new System.Drawing.Point(9, 289);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(515, 201);
-            this.panel3.TabIndex = 24;
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(lblLimpiar1);
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(lblResultado);
+            panel3.Location = new Point(9, 361);
+            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(515, 250);
+            panel3.TabIndex = 24;
             // 
             // lblLimpiar1
             // 
-            this.lblLimpiar1.BackColor = System.Drawing.Color.FromArgb(88, 101, 242);
-            this.lblLimpiar1.FlatAppearance.BorderSize = 0;
-            this.lblLimpiar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblLimpiar1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblLimpiar1.ForeColor = System.Drawing.Color.White;
-            this.lblLimpiar1.Location = new System.Drawing.Point(59, 133);
-            this.lblLimpiar1.Size = new System.Drawing.Size(127, 46);
-            this.lblLimpiar1.Text = "Limpiar";
-            this.lblLimpiar1.UseVisualStyleBackColor = false;
-            this.lblLimpiar1.Click += new System.EventHandler(this.lblLimpiar1_Click);
+            lblLimpiar1.BackColor = Color.FromArgb(88, 101, 242);
+            lblLimpiar1.FlatAppearance.BorderSize = 0;
+            lblLimpiar1.FlatStyle = FlatStyle.Flat;
+            lblLimpiar1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblLimpiar1.ForeColor = Color.White;
+            lblLimpiar1.Location = new Point(59, 166);
+            lblLimpiar1.Margin = new Padding(3, 4, 3, 4);
+            lblLimpiar1.Name = "lblLimpiar1";
+            lblLimpiar1.Size = new Size(127, 58);
+            lblLimpiar1.TabIndex = 0;
+            lblLimpiar1.Text = "Limpiar";
+            lblLimpiar1.UseVisualStyleBackColor = false;
+            lblLimpiar1.Click += lblLimpiar1_Click;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(16, 11);
-            this.label7.Text = "Función:";
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 15.75F);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(16, 14);
+            label7.Name = "label7";
+            label7.Size = new Size(116, 37);
+            label7.TabIndex = 1;
+            label7.Text = "Función:";
             // 
             // lblResultado
             // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.lblResultado.ForeColor = System.Drawing.Color.Black;
-            this.lblResultado.Location = new System.Drawing.Point(133, 60);
-            this.lblResultado.Text = "resultado";
+            lblResultado.AutoSize = true;
+            lblResultado.Font = new Font("Segoe UI", 15.75F);
+            lblResultado.ForeColor = Color.Black;
+            lblResultado.Location = new Point(133, 75);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(128, 37);
+            lblResultado.TabIndex = 2;
+            lblResultado.Text = "resultado";
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.btnEvaluar);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.txta1);
-            this.panel2.Controls.Add(this.txta0);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(9, 111);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1021, 169);
-            this.panel2.TabIndex = 23;
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(label10);
+            panel2.Controls.Add(label9);
+            panel2.Controls.Add(btnEvaluar);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(txta1);
+            panel2.Controls.Add(txta0);
+            panel2.Controls.Add(label3);
+            panel2.Location = new Point(9, 139);
+            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1021, 210);
+            panel2.TabIndex = 23;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(365, 60);
-            this.label10.Text = "a₀";
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 15.75F);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(365, 75);
+            label10.Name = "label10";
+            label10.Size = new Size(41, 37);
+            label10.TabIndex = 0;
+            label10.Text = "a₀";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(224, 59);
-            this.label9.Text = "a₁";
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 15.75F);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(224, 74);
+            label9.Name = "label9";
+            label9.Size = new Size(40, 37);
+            label9.TabIndex = 1;
+            label9.Text = "a₁";
             // 
             // btnEvaluar
             // 
-            this.btnEvaluar.BackColor = System.Drawing.Color.FromArgb(88, 101, 242);
-            this.btnEvaluar.FlatAppearance.BorderSize = 0;
-            this.btnEvaluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEvaluar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnEvaluar.ForeColor = System.Drawing.Color.White;
-            this.btnEvaluar.Location = new System.Drawing.Point(796, 105);
-            this.btnEvaluar.Size = new System.Drawing.Size(187, 46);
-            this.btnEvaluar.Text = "Evaluar";
-            this.btnEvaluar.UseVisualStyleBackColor = false;
-            this.btnEvaluar.Click += new System.EventHandler(this.btnEvaluar_Click);
+            btnEvaluar.BackColor = Color.FromArgb(88, 101, 242);
+            btnEvaluar.FlatAppearance.BorderSize = 0;
+            btnEvaluar.FlatStyle = FlatStyle.Flat;
+            btnEvaluar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnEvaluar.ForeColor = Color.White;
+            btnEvaluar.Location = new Point(796, 131);
+            btnEvaluar.Margin = new Padding(3, 4, 3, 4);
+            btnEvaluar.Name = "btnEvaluar";
+            btnEvaluar.Size = new Size(187, 58);
+            btnEvaluar.TabIndex = 2;
+            btnEvaluar.Text = "Evaluar";
+            btnEvaluar.UseVisualStyleBackColor = false;
+            btnEvaluar.Click += btnEvaluar_Click;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(420, 18);
-            this.label6.Text = "y utiliza los signos correspondientes";
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14.25F);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(420, 22);
+            label6.Name = "label6";
+            label6.Size = new Size(399, 32);
+            label6.TabIndex = 3;
+            label6.Text = "y utiliza los signos correspondientes";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(273, 105);
-            this.label5.Text = "x";
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 15.75F);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(273, 131);
+            label5.Name = "label5";
+            label5.Size = new Size(29, 37);
+            label5.TabIndex = 4;
+            label5.Text = "x";
             // 
             // txta1
             // 
-            this.txta1.BackColor = System.Drawing.Color.LightGray;
-            this.txta1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txta1.Location = new System.Drawing.Point(199, 100);
-            this.txta1.Size = new System.Drawing.Size(65, 39);
+            txta1.BackColor = Color.LightGray;
+            txta1.Font = new Font("Segoe UI", 14.25F);
+            txta1.Location = new Point(199, 125);
+            txta1.Margin = new Padding(3, 4, 3, 4);
+            txta1.Name = "txta1";
+            txta1.Size = new Size(65, 39);
+            txta1.TabIndex = 5;
             // 
             // txta0
             // 
-            this.txta0.BackColor = System.Drawing.Color.LightGray;
-            this.txta0.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txta0.Location = new System.Drawing.Point(320, 101);
-            this.txta0.Size = new System.Drawing.Size(76, 39);
+            txta0.BackColor = Color.LightGray;
+            txta0.Font = new Font("Segoe UI", 14.25F);
+            txta0.Location = new Point(320, 126);
+            txta0.Margin = new Padding(3, 4, 3, 4);
+            txta0.Name = "txta0";
+            txta0.Size = new Size(76, 39);
+            txta0.TabIndex = 6;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(52, 18);
-            this.label3.Text = "Inserta los valores de tu función";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 14.25F);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(52, 22);
+            label3.Name = "label3";
+            label3.Size = new Size(355, 32);
+            label3.TabIndex = 7;
+            label3.Text = "Inserta los valores de tu función";
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lblFuncionRecibida);
-            this.panel1.Location = new System.Drawing.Point(9, 17);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1021, 86);
-            this.panel1.TabIndex = 22;
+            panel1.BackColor = SystemColors.ActiveBorder;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblFuncionRecibida);
+            panel1.Location = new Point(9, 21);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1021, 106);
+            panel1.TabIndex = 22;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(33, 23);
-            this.label1.Text = "Función guía:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(33, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(157, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Función guía:";
             // 
             // lblFuncionRecibida
             // 
-            this.lblFuncionRecibida.AutoSize = true;
-            this.lblFuncionRecibida.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.lblFuncionRecibida.ForeColor = System.Drawing.Color.Black;
-            this.lblFuncionRecibida.Location = new System.Drawing.Point(233, 23);
-            this.lblFuncionRecibida.Text = "label1";
+            lblFuncionRecibida.AutoSize = true;
+            lblFuncionRecibida.Font = new Font("Segoe UI", 14.25F);
+            lblFuncionRecibida.ForeColor = Color.Black;
+            lblFuncionRecibida.Location = new Point(233, 29);
+            lblFuncionRecibida.Name = "lblFuncionRecibida";
+            lblFuncionRecibida.Size = new Size(78, 32);
+            lblFuncionRecibida.TabIndex = 1;
+            lblFuncionRecibida.Text = "label1";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(-74, 69);
-            this.label2.Text = "";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 14.25F);
+            label2.ForeColor = Color.WhiteSmoke;
+            label2.Location = new Point(-74, 86);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 32);
+            label2.TabIndex = 26;
             // 
             // Grado1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1087, 536);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
-            this.Name = "Grado1";
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.Text = "Método Regula Falsi - Grado 1";
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveBorder;
+            ClientSize = new Size(1087, 670);
+            Controls.Add(panel4);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(label2);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Grado1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Método Regula Falsi - Grado 1";
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

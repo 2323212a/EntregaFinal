@@ -28,156 +28,157 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.lblRaiz = new System.Windows.Forms.Label();
-            this.dgvReglaFalsa = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.txtError = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblInfo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReglaFalsa)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            btnRegresar = new System.Windows.Forms.Button();
+            lblRaiz = new System.Windows.Forms.Label();
+            dgvReglaFalsa = new System.Windows.Forms.DataGridView();
+            panel1 = new System.Windows.Forms.Panel();
+            btnCalcular = new System.Windows.Forms.Button();
+            txtError = new System.Windows.Forms.TextBox();
+            label2 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            lblInfo = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)dgvReglaFalsa).BeginInit();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // btnRegresar
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(101)))), ((int)(((byte)(242)))));
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(1246, 141);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(197, 44);
-            this.btnRegresar.TabIndex = 8;
-            this.btnRegresar.Text = "Nueva Funcion";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            btnRegresar.BackColor = System.Drawing.Color.FromArgb(88, 101, 242);
+            btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnRegresar.FlatAppearance.BorderSize = 0;
+            btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnRegresar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            btnRegresar.ForeColor = System.Drawing.Color.White;
+            btnRegresar.Location = new System.Drawing.Point(1246, 176);
+            btnRegresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new System.Drawing.Size(197, 55);
+            btnRegresar.TabIndex = 8;
+            btnRegresar.Text = "Nueva Funcion";
+            btnRegresar.UseVisualStyleBackColor = false;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // lblRaiz
             // 
-            this.lblRaiz.AutoSize = true;
-            this.lblRaiz.BackColor = System.Drawing.Color.Transparent;
-            this.lblRaiz.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.lblRaiz.ForeColor = System.Drawing.Color.Black;
-            this.lblRaiz.Location = new System.Drawing.Point(1127, 50);
-            this.lblRaiz.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRaiz.Name = "lblRaiz";
-            this.lblRaiz.Size = new System.Drawing.Size(51, 32);
-            this.lblRaiz.TabIndex = 9;
-            this.lblRaiz.Text = "raiz";
+            lblRaiz.AutoSize = true;
+            lblRaiz.BackColor = System.Drawing.Color.Transparent;
+            lblRaiz.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            lblRaiz.ForeColor = System.Drawing.Color.Black;
+            lblRaiz.Location = new System.Drawing.Point(1127, 62);
+            lblRaiz.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblRaiz.Name = "lblRaiz";
+            lblRaiz.Size = new System.Drawing.Size(51, 32);
+            lblRaiz.TabIndex = 9;
+            lblRaiz.Text = "raiz";
             // 
             // dgvReglaFalsa
             // 
-            this.dgvReglaFalsa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvReglaFalsa.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvReglaFalsa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReglaFalsa.Location = new System.Drawing.Point(44, 192);
-            this.dgvReglaFalsa.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvReglaFalsa.Name = "dgvReglaFalsa";
-            this.dgvReglaFalsa.RowHeadersWidth = 51;
-            this.dgvReglaFalsa.Size = new System.Drawing.Size(1343, 402);
-            this.dgvReglaFalsa.TabIndex = 7;
+            dgvReglaFalsa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dgvReglaFalsa.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dgvReglaFalsa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvReglaFalsa.Location = new System.Drawing.Point(44, 240);
+            dgvReglaFalsa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            dgvReglaFalsa.Name = "dgvReglaFalsa";
+            dgvReglaFalsa.RowHeadersWidth = 51;
+            dgvReglaFalsa.Size = new System.Drawing.Size(1343, 502);
+            dgvReglaFalsa.TabIndex = 7;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.btnCalcular);
-            this.panel1.Controls.Add(this.txtError);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lblInfo);
-            this.panel1.Location = new System.Drawing.Point(-9, 29);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1101, 142);
-            this.panel1.TabIndex = 6;
+            panel1.BackColor = System.Drawing.Color.Transparent;
+            panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            panel1.Controls.Add(btnCalcular);
+            panel1.Controls.Add(txtError);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblInfo);
+            panel1.Location = new System.Drawing.Point(-9, 36);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(1101, 176);
+            panel1.TabIndex = 6;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(101)))), ((int)(((byte)(242)))));
-            this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalcular.FlatAppearance.BorderSize = 0;
-            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCalcular.ForeColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(924, 90);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(148, 44);
-            this.btnCalcular.TabIndex = 4;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = false;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            btnCalcular.BackColor = System.Drawing.Color.FromArgb(88, 101, 242);
+            btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnCalcular.FlatAppearance.BorderSize = 0;
+            btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCalcular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            btnCalcular.ForeColor = System.Drawing.Color.White;
+            btnCalcular.Location = new System.Drawing.Point(924, 112);
+            btnCalcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new System.Drawing.Size(148, 55);
+            btnCalcular.TabIndex = 4;
+            btnCalcular.Text = "Calcular";
+            btnCalcular.UseVisualStyleBackColor = false;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // txtError
             // 
-            this.txtError.BackColor = System.Drawing.Color.LightGray;
-            this.txtError.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtError.Location = new System.Drawing.Point(947, 9);
-            this.txtError.Margin = new System.Windows.Forms.Padding(4);
-            this.txtError.Name = "txtError";
-            this.txtError.Size = new System.Drawing.Size(124, 39);
-            this.txtError.TabIndex = 3;
+            txtError.BackColor = System.Drawing.Color.LightGray;
+            txtError.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            txtError.Location = new System.Drawing.Point(947, 11);
+            txtError.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            txtError.Name = "txtError";
+            txtError.Size = new System.Drawing.Size(124, 39);
+            txtError.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(597, 16);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(320, 32);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Ingresa el error aproximado: ";
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            label2.ForeColor = System.Drawing.Color.Black;
+            label2.Location = new System.Drawing.Point(597, 20);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(320, 32);
+            label2.TabIndex = 2;
+            label2.Text = "Ingresa el error aproximado: ";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(59, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Datos: ";
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            label1.ForeColor = System.Drawing.Color.Black;
+            label1.Location = new System.Drawing.Point(59, 20);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(87, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Datos: ";
             // 
             // lblInfo
             // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.lblInfo.ForeColor = System.Drawing.Color.Black;
-            this.lblInfo.Location = new System.Drawing.Point(59, 58);
-            this.lblInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(38, 32);
-            this.lblInfo.TabIndex = 0;
-            this.lblInfo.Text = "ds";
+            lblInfo.AutoSize = true;
+            lblInfo.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            lblInfo.ForeColor = System.Drawing.Color.Black;
+            lblInfo.Location = new System.Drawing.Point(59, 72);
+            lblInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblInfo.Name = "lblInfo";
+            lblInfo.Size = new System.Drawing.Size(38, 32);
+            lblInfo.TabIndex = 0;
+            lblInfo.Text = "ds";
             // 
             // Soluciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1452, 623);
-            this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.lblRaiz);
-            this.Controls.Add(this.dgvReglaFalsa);
-            this.Controls.Add(this.panel1);
-            this.Name = "Soluciones";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReglaFalsa)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.DarkGray;
+            ClientSize = new System.Drawing.Size(1452, 779);
+            Controls.Add(btnRegresar);
+            Controls.Add(lblRaiz);
+            Controls.Add(dgvReglaFalsa);
+            Controls.Add(panel1);
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "Soluciones";
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dgvReglaFalsa).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

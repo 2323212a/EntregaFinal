@@ -8,8 +8,15 @@ namespace EntregaFinal.RegulaFalsi
         public Falsi()
         {
             InitializeComponent();
+            this.FormClosed += (s, e) => VolverMenu();
         }
-
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
+        }
         private void Falsi_Load(object sender, EventArgs e)
         {
             // Aquí puedes inicializar valores o configuraciones del formulario

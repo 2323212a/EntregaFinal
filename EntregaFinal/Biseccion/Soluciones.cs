@@ -293,25 +293,38 @@ namespace EntregaFinal
         //Botón para regresar a Form1 y cerrar el resto de formularios
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Form form1 = Application.OpenForms["Form1"];
+            // Crear instancia del formulario Grados
+            Grados formGrados = new Grados();
 
-            if (form1 != null)
+            // Mostrar el formulario
+            formGrados.Show();
+
+            // Opcional: esconder el formulario actual
+            this.Hide();
+
+        }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+           
+            // Intentar obtener el formulario MainMenu si ya está abierto
+            Form mainMenu = Application.OpenForms["MainMenu"];
+
+            if (mainMenu != null)
             {
-                form1.Show();
+                // Si ya existe, solo lo mostramos
+                mainMenu.Show();
             }
             else
             {
-                form1 = new Form();
-                form1.Show();
+                // Si no existe, lo creamos
+                mainMenu = new MainMenu();
+                mainMenu.Show();
             }
 
-            foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
-            {
-                if (form != form1)
-                {
-                    form.Close();
-                }
-            }
+            // Cerrar este formulario
+            this.Close();
         }
     }
+    
 }

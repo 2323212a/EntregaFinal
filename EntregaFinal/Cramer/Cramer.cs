@@ -16,8 +16,15 @@ namespace EntregaFinal.Metodoslineales
         public Cramer()
         {
             InitializeComponent();
+            this.FormClosed += (s, e) => VolverMenu();
         }
-
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
+        }
         private void AnimacionBoton(Button btn, bool entrar)
         {
             if (entrar)
@@ -71,6 +78,8 @@ namespace EntregaFinal.Metodoslineales
             ventana.Show();
             this.Hide();
         }
+
+
 
         private void Cramer_Load(object sender, EventArgs e)
         {

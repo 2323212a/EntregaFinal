@@ -8,11 +8,20 @@ namespace EntregaFinal.Biseccion
         public Bolzano()
         {
             InitializeComponent();
+            this.FormClosed += (s, e) => VolverMenu();
         }
-
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
+        }
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aquí irá la lógica del método de bisección.");
+            Grados formGrados = new Grados();
+            formGrados.Show();
+            this.Hide();
         }
     }
 }

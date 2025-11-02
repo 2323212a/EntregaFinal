@@ -1,6 +1,6 @@
 ﻿namespace EntregaFinal.Newton
 {
-    partial class Form2
+    partial class Newton1
     {
         /// <summary>
         /// Required designer variable.

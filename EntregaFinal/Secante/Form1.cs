@@ -12,11 +12,19 @@ using System.Text.RegularExpressions;
 
 namespace EntregaFinal.Secante
 {
-    public partial class Form1: Form
+    public partial class Secante1: Form
     {
-        public Form1()
+        public Secante1()
         {
             InitializeComponent();
+            this.FormClosed += (s, e) => VolverMenu();
+        }
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
         }
         private string ConvertirCaretAPow(string expr)
         {

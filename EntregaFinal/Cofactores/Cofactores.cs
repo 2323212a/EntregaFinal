@@ -22,8 +22,15 @@ namespace EntregaFinal
             InitializeComponent();
             InicializarDataGridView(2); // Inicia la aplicación con el sistema 2x2.
             dimension = 2; // Asigna el valor por defecto a la dimensión.
+            this.FormClosed += (s, e) => VolverMenu();
         }
-
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
+        }
         // 2. MÉTODOS MANEJADORES DE EVENTOS
         private void rdb2x2_CheckedChanged(object sender, EventArgs e)
         {
@@ -279,6 +286,36 @@ namespace EntregaFinal
             btnConfirmar.Visible = false;
             btnCorregir.Visible = false;
             btnResolver.Visible = true;
+        }
+
+        private void pbSistema2x2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbSistema3x3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            Form mainMenu = Application.OpenForms["MainMenu"];
+
+            if (mainMenu != null)
+            {
+                // Si ya existe, solo lo mostramos
+                mainMenu.Show();
+            }
+            else
+            {
+                // Si no existe, lo creamos
+                mainMenu = new MainMenu();
+                mainMenu.Show();
+            }
+
+            // Cerrar este formulario
+            this.Close();
         }
     }
 }

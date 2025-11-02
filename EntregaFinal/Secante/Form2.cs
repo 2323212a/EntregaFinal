@@ -29,7 +29,7 @@ namespace EntregaFinal.Secante
         }
         private void btnAbrirCalculadora_Click(object sender, EventArgs e)
         {
-            Form1 calculadora = new Form1(); 
+            Secante1 calculadora = new Secante1(); 
             calculadora.Show();
             this.Hide(); 
         }

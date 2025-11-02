@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace EntregaFinal
@@ -12,19 +11,19 @@ namespace EntregaFinal
         public MainMenu()
         {
             InitializeComponent();
-            this.Load += (s, e) => CrearInterfaz();
+            CrearInterfaz(); // ✅ Se carga en diseño y en ejecución
         }
 
         private void CrearInterfaz()
         {
-            // Configuración general del formulario
+            // Configuración visual del Form
             this.Text = "Menú principal";
             this.BackColor = Color.FromArgb(230, 240, 255);
             this.ClientSize = new Size(1280, 900);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // Título principal
+            // Título
             var titulo = new Label
             {
                 Text = "MENÚ DE MÉTODOS NUMÉRICOS",
@@ -37,7 +36,7 @@ namespace EntregaFinal
             };
             this.Controls.Add(titulo);
 
-            // Contenedor principal
+            // Layout principal
             var layout = new TableLayoutPanel
             {
                 Dock = DockStyle.Fill,
@@ -49,41 +48,23 @@ namespace EntregaFinal
                 AutoScroll = true,
             };
 
-            layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50)); // más espacio para labels
-            layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50)); // botones
+            layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50));
+            layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50));
 
-            layout.RowStyles.Add(new RowStyle(SizeType.Percent, 25));
-            layout.RowStyles.Add(new RowStyle(SizeType.Percent, 25));
-            layout.RowStyles.Add(new RowStyle(SizeType.Percent, 25));
-            layout.RowStyles.Add(new RowStyle(SizeType.Percent, 25));
+            // ✅ Más espacio para la primera fila (Sistemas lineales)
+            layout.RowStyles.Add(new RowStyle(SizeType.Percent, 40)); // Aumentamos de 30 a 40
+            for (int i = 1; i < 4; i++)
+                layout.RowStyles.Add(new RowStyle(SizeType.Percent, 20)); // Repartimos el resto
 
             this.Controls.Add(layout);
 
-            // Textos de las secciones
+            // Contenido
             string[] textos =
             {
-                "Sistemas de ecuaciones lineales:\n" +
-                "  • Cramer\n" +
-                "  • Eliminación de Gauss\n" +
-                "  • Inversa por Gauss-Jordan\n" +
-                "  • Inversa por cofactores",
-
-                "Raíces de polinomios:\n" +
-                "  • Bolzano (bisección)\n" +
-                "  • Regula Falsi\n" +
-                "  • Newton-Raphson\n" +
-                "  • Secante",
-
-                "Derivación numérica:\n" +
-                "  • Fórmulas progresivas\n" +
-                "  • Centradas\n" +
-                "  • De orden superior",
-
-                "Integración numérica:\n" +
-                "  • Rectángulos\n" +
-                "  • Trapecio\n" +
-                "  • Simpson 1/3\n" +
-                "  • Simpson 3/8"
+                "Sistemas de ecuaciones lineales:\n  • Cramer\n  • Gauss\n  • Inversa (Gauss-Jordan)\n  • Inversa por cofactores",
+                "Raíces de polinomios:\n  • Bisección\n  • Regula Falsi\n  • Newton-Raphson\n  • Secante",
+                "Derivación numérica:\n  • Progresivas\n  • Centradas\n  • Orden superior",
+                "Integración numérica:\n  • Rectángulos\n  • Trapecio\n  • Simpson 1/3\n  • Simpson 3/8"
             };
 
             string[] nombresBotones =
@@ -103,15 +84,19 @@ namespace EntregaFinal
                 {
                     Text = textos[i],
                     AutoSize = false,
-                    Font = new Font("Segoe UI", 13, FontStyle.Regular),
+                    Font = new Font("Segoe UI", 13),
                     ForeColor = Color.Black,
                     BackColor = Color.FromArgb(245, 250, 255),
                     BorderStyle = BorderStyle.FixedSingle,
                     Dock = DockStyle.Fill,
-                    TextAlign = ContentAlignment.MiddleCenter, // centrado
+                    TextAlign = ContentAlignment.MiddleCenter,
                     Padding = new Padding(20),
                     Margin = new Padding(5)
                 };
+
+                // ✅ Bajamos visualmente un poco más el texto del primer label
+                if (i == 0)
+                    labels[i].Padding = new Padding(20, 40, 20, 20);
 
                 botones[i] = new Button
                 {
@@ -125,9 +110,6 @@ namespace EntregaFinal
                     Margin = new Padding(10)
                 };
                 botones[i].FlatAppearance.BorderSize = 0;
-
-                botones[i].MouseEnter += (s, e) => ((Button)s).BackColor = Color.FromArgb(100, 130, 220);
-                botones[i].MouseLeave += (s, e) => ((Button)s).BackColor = Color.FromArgb(80, 110, 200);
 
                 int index = i;
                 botones[i].Click += (s, e) => AbrirFormulario(index);
@@ -153,7 +135,7 @@ namespace EntregaFinal
             {
                 formDestino.StartPosition = FormStartPosition.CenterScreen;
                 formDestino.Show();
-                this.Hide();  // Para esconder este menú cuando abres otro form
+                this.Hide();
             }
         }
     }

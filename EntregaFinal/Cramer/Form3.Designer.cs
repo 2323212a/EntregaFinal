@@ -28,592 +28,604 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbldd3 = new System.Windows.Forms.Label();
-            this.d3 = new System.Windows.Forms.TextBox();
-            this.d2 = new System.Windows.Forms.TextBox();
-            this.d1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbldx3 = new System.Windows.Forms.Label();
-            this.c3 = new System.Windows.Forms.TextBox();
-            this.b3 = new System.Windows.Forms.TextBox();
-            this.a3 = new System.Windows.Forms.TextBox();
-            this.borrar2 = new System.Windows.Forms.Button();
-            this.lbldx2 = new System.Windows.Forms.Label();
-            this.lbldx1 = new System.Windows.Forms.Label();
-            this.lbldelta = new System.Windows.Forms.Label();
-            this.lbldd2 = new System.Windows.Forms.Label();
-            this.lbldd1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.c2 = new System.Windows.Forms.TextBox();
-            this.c1 = new System.Windows.Forms.TextBox();
-            this.b2 = new System.Windows.Forms.TextBox();
-            this.b1 = new System.Windows.Forms.TextBox();
-            this.a2 = new System.Windows.Forms.TextBox();
-            this.a1 = new System.Windows.Forms.TextBox();
-            this.btnregresar = new System.Windows.Forms.Button();
-            this.abcd1 = new System.Windows.Forms.Label();
-            this.abcd = new System.Windows.Forms.Label();
-            this.abcd2 = new System.Windows.Forms.Label();
-            this.abcd5 = new System.Windows.Forms.Label();
-            this.abcd4 = new System.Windows.Forms.Label();
-            this.abcd3 = new System.Windows.Forms.Label();
-            this.abcd8 = new System.Windows.Forms.Label();
-            this.abcd7 = new System.Windows.Forms.Label();
-            this.abcd6 = new System.Windows.Forms.Label();
-            this.abcd11 = new System.Windows.Forms.Label();
-            this.abcd10 = new System.Windows.Forms.Label();
-            this.abcd9 = new System.Windows.Forms.Label();
-            this.bcd = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblrdx1 = new System.Windows.Forms.Label();
-            this.lblrdx2 = new System.Windows.Forms.Label();
-            this.lblrdx3 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lbldd3 = new System.Windows.Forms.Label();
+            d3 = new System.Windows.Forms.TextBox();
+            d2 = new System.Windows.Forms.TextBox();
+            d1 = new System.Windows.Forms.TextBox();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            lbldx3 = new System.Windows.Forms.Label();
+            c3 = new System.Windows.Forms.TextBox();
+            b3 = new System.Windows.Forms.TextBox();
+            a3 = new System.Windows.Forms.TextBox();
+            borrar2 = new System.Windows.Forms.Button();
+            lbldx2 = new System.Windows.Forms.Label();
+            lbldx1 = new System.Windows.Forms.Label();
+            lbldelta = new System.Windows.Forms.Label();
+            lbldd2 = new System.Windows.Forms.Label();
+            lbldd1 = new System.Windows.Forms.Label();
+            button2 = new System.Windows.Forms.Button();
+            c2 = new System.Windows.Forms.TextBox();
+            c1 = new System.Windows.Forms.TextBox();
+            b2 = new System.Windows.Forms.TextBox();
+            b1 = new System.Windows.Forms.TextBox();
+            a2 = new System.Windows.Forms.TextBox();
+            a1 = new System.Windows.Forms.TextBox();
+            btnregresar = new System.Windows.Forms.Button();
+            abcd1 = new System.Windows.Forms.Label();
+            abcd = new System.Windows.Forms.Label();
+            abcd2 = new System.Windows.Forms.Label();
+            abcd5 = new System.Windows.Forms.Label();
+            abcd4 = new System.Windows.Forms.Label();
+            abcd3 = new System.Windows.Forms.Label();
+            abcd8 = new System.Windows.Forms.Label();
+            abcd7 = new System.Windows.Forms.Label();
+            abcd6 = new System.Windows.Forms.Label();
+            abcd11 = new System.Windows.Forms.Label();
+            abcd10 = new System.Windows.Forms.Label();
+            abcd9 = new System.Windows.Forms.Label();
+            bcd = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            lblrdx1 = new System.Windows.Forms.Label();
+            lblrdx2 = new System.Windows.Forms.Label();
+            lblrdx3 = new System.Windows.Forms.Label();
+            btnMainMenu = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // lbldd3
             // 
-            this.lbldd3.AutoSize = true;
-            this.lbldd3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lbldd3.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lbldd3.ForeColor = System.Drawing.Color.White;
-            this.lbldd3.Location = new System.Drawing.Point(427, 368);
-            this.lbldd3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldd3.Name = "lbldd3";
-            this.lbldd3.Size = new System.Drawing.Size(43, 35);
-            this.lbldd3.TabIndex = 106;
-            this.lbldd3.Text = "C1";
+            lbldd3.AutoSize = true;
+            lbldd3.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lbldd3.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lbldd3.ForeColor = System.Drawing.Color.White;
+            lbldd3.Location = new System.Drawing.Point(427, 460);
+            lbldd3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lbldd3.Name = "lbldd3";
+            lbldd3.Size = new System.Drawing.Size(43, 35);
+            lbldd3.TabIndex = 106;
+            lbldd3.Text = "C1";
             // 
             // d3
             // 
-            this.d3.Location = new System.Drawing.Point(1119, 233);
-            this.d3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.d3.Name = "d3";
-            this.d3.Size = new System.Drawing.Size(132, 22);
-            this.d3.TabIndex = 104;
+            d3.Location = new System.Drawing.Point(1119, 291);
+            d3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            d3.Name = "d3";
+            d3.Size = new System.Drawing.Size(132, 27);
+            d3.TabIndex = 104;
             // 
             // d2
             // 
-            this.d2.Location = new System.Drawing.Point(1119, 175);
-            this.d2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.d2.Name = "d2";
-            this.d2.Size = new System.Drawing.Size(132, 22);
-            this.d2.TabIndex = 101;
+            d2.Location = new System.Drawing.Point(1119, 219);
+            d2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            d2.Name = "d2";
+            d2.Size = new System.Drawing.Size(132, 27);
+            d2.TabIndex = 101;
             // 
             // d1
             // 
-            this.d1.Location = new System.Drawing.Point(1119, 126);
-            this.d1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.d1.Name = "d1";
-            this.d1.Size = new System.Drawing.Size(132, 22);
-            this.d1.TabIndex = 100;
+            d1.Location = new System.Drawing.Point(1119, 158);
+            d1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            d1.Name = "d1";
+            d1.Size = new System.Drawing.Size(132, 27);
+            d1.TabIndex = 100;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(969, 240);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 16);
-            this.label4.TabIndex = 99;
-            this.label4.Text = "=";
+            label4.AutoSize = true;
+            label4.BackColor = System.Drawing.Color.FromArgb(28, 28, 48);
+            label4.ForeColor = System.Drawing.Color.White;
+            label4.Location = new System.Drawing.Point(969, 300);
+            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(19, 20);
+            label4.TabIndex = 99;
+            label4.Text = "=";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(969, 182);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 16);
-            this.label5.TabIndex = 98;
-            this.label5.Text = "=";
+            label5.AutoSize = true;
+            label5.BackColor = System.Drawing.Color.FromArgb(28, 28, 48);
+            label5.ForeColor = System.Drawing.Color.White;
+            label5.Location = new System.Drawing.Point(969, 228);
+            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(19, 20);
+            label5.TabIndex = 98;
+            label5.Text = "=";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(969, 133);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(14, 16);
-            this.label6.TabIndex = 97;
-            this.label6.Text = "=";
+            label6.AutoSize = true;
+            label6.BackColor = System.Drawing.Color.FromArgb(28, 28, 48);
+            label6.ForeColor = System.Drawing.Color.White;
+            label6.Location = new System.Drawing.Point(969, 166);
+            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(19, 20);
+            label6.TabIndex = 97;
+            label6.Text = "=";
             // 
             // lbldx3
             // 
-            this.lbldx3.AutoSize = true;
-            this.lbldx3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lbldx3.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lbldx3.ForeColor = System.Drawing.Color.White;
-            this.lbldx3.Location = new System.Drawing.Point(598, 469);
-            this.lbldx3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldx3.Name = "lbldx3";
-            this.lbldx3.Size = new System.Drawing.Size(39, 35);
-            this.lbldx3.TabIndex = 95;
-            this.lbldx3.Text = "x̄3";
+            lbldx3.AutoSize = true;
+            lbldx3.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lbldx3.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lbldx3.ForeColor = System.Drawing.Color.White;
+            lbldx3.Location = new System.Drawing.Point(598, 586);
+            lbldx3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lbldx3.Name = "lbldx3";
+            lbldx3.Size = new System.Drawing.Size(39, 35);
+            lbldx3.TabIndex = 95;
+            lbldx3.Text = "x̄3";
             // 
             // c3
             // 
-            this.c3.Location = new System.Drawing.Point(809, 236);
-            this.c3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.c3.Name = "c3";
-            this.c3.Size = new System.Drawing.Size(132, 22);
-            this.c3.TabIndex = 91;
+            c3.Location = new System.Drawing.Point(809, 295);
+            c3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            c3.Name = "c3";
+            c3.Size = new System.Drawing.Size(132, 27);
+            c3.TabIndex = 91;
             // 
             // b3
             // 
-            this.b3.Location = new System.Drawing.Point(525, 236);
-            this.b3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.b3.Name = "b3";
-            this.b3.Size = new System.Drawing.Size(132, 22);
-            this.b3.TabIndex = 90;
+            b3.Location = new System.Drawing.Point(525, 295);
+            b3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            b3.Name = "b3";
+            b3.Size = new System.Drawing.Size(132, 27);
+            b3.TabIndex = 90;
             // 
             // a3
             // 
-            this.a3.Location = new System.Drawing.Point(241, 240);
-            this.a3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.a3.Name = "a3";
-            this.a3.Size = new System.Drawing.Size(132, 22);
-            this.a3.TabIndex = 89;
+            a3.Location = new System.Drawing.Point(241, 300);
+            a3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            a3.Name = "a3";
+            a3.Size = new System.Drawing.Size(132, 27);
+            a3.TabIndex = 89;
             // 
             // borrar2
             // 
-            this.borrar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.borrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.borrar2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.borrar2.ForeColor = System.Drawing.Color.White;
-            this.borrar2.Location = new System.Drawing.Point(1087, 368);
-            this.borrar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.borrar2.Name = "borrar2";
-            this.borrar2.Size = new System.Drawing.Size(209, 154);
-            this.borrar2.TabIndex = 88;
-            this.borrar2.Text = "borrar";
-            this.borrar2.UseVisualStyleBackColor = false;
-            this.borrar2.Click += new System.EventHandler(this.borrar2_Click_1);
+            borrar2.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            borrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            borrar2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            borrar2.ForeColor = System.Drawing.Color.White;
+            borrar2.Location = new System.Drawing.Point(1087, 460);
+            borrar2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            borrar2.Name = "borrar2";
+            borrar2.Size = new System.Drawing.Size(209, 192);
+            borrar2.TabIndex = 88;
+            borrar2.Text = "borrar";
+            borrar2.UseVisualStyleBackColor = false;
+            borrar2.Click += borrar2_Click_1;
             // 
             // lbldx2
             // 
-            this.lbldx2.AutoSize = true;
-            this.lbldx2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lbldx2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lbldx2.ForeColor = System.Drawing.Color.White;
-            this.lbldx2.Location = new System.Drawing.Point(403, 469);
-            this.lbldx2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldx2.Name = "lbldx2";
-            this.lbldx2.Size = new System.Drawing.Size(39, 35);
-            this.lbldx2.TabIndex = 87;
-            this.lbldx2.Text = "x̄2";
+            lbldx2.AutoSize = true;
+            lbldx2.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lbldx2.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lbldx2.ForeColor = System.Drawing.Color.White;
+            lbldx2.Location = new System.Drawing.Point(403, 586);
+            lbldx2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lbldx2.Name = "lbldx2";
+            lbldx2.Size = new System.Drawing.Size(39, 35);
+            lbldx2.TabIndex = 87;
+            lbldx2.Text = "x̄2";
             // 
             // lbldx1
             // 
-            this.lbldx1.AutoSize = true;
-            this.lbldx1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lbldx1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lbldx1.ForeColor = System.Drawing.Color.White;
-            this.lbldx1.Location = new System.Drawing.Point(217, 469);
-            this.lbldx1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldx1.Name = "lbldx1";
-            this.lbldx1.Size = new System.Drawing.Size(39, 35);
-            this.lbldx1.TabIndex = 84;
-            this.lbldx1.Text = "x̄1";
+            lbldx1.AutoSize = true;
+            lbldx1.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lbldx1.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lbldx1.ForeColor = System.Drawing.Color.White;
+            lbldx1.Location = new System.Drawing.Point(217, 586);
+            lbldx1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lbldx1.Name = "lbldx1";
+            lbldx1.Size = new System.Drawing.Size(39, 35);
+            lbldx1.TabIndex = 84;
+            lbldx1.Text = "x̄1";
             // 
             // lbldelta
             // 
-            this.lbldelta.AutoSize = true;
-            this.lbldelta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lbldelta.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lbldelta.ForeColor = System.Drawing.Color.White;
-            this.lbldelta.Location = new System.Drawing.Point(535, 368);
-            this.lbldelta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldelta.Name = "lbldelta";
-            this.lbldelta.Size = new System.Drawing.Size(73, 35);
-            this.lbldelta.TabIndex = 83;
-            this.lbldelta.Text = "Delta";
+            lbldelta.AutoSize = true;
+            lbldelta.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lbldelta.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lbldelta.ForeColor = System.Drawing.Color.White;
+            lbldelta.Location = new System.Drawing.Point(535, 460);
+            lbldelta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lbldelta.Name = "lbldelta";
+            lbldelta.Size = new System.Drawing.Size(73, 35);
+            lbldelta.TabIndex = 83;
+            lbldelta.Text = "Delta";
             // 
             // lbldd2
             // 
-            this.lbldd2.AutoSize = true;
-            this.lbldd2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lbldd2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lbldd2.ForeColor = System.Drawing.Color.White;
-            this.lbldd2.Location = new System.Drawing.Point(324, 368);
-            this.lbldd2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldd2.Name = "lbldd2";
-            this.lbldd2.Size = new System.Drawing.Size(42, 35);
-            this.lbldd2.TabIndex = 82;
-            this.lbldd2.Text = "B1";
+            lbldd2.AutoSize = true;
+            lbldd2.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lbldd2.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lbldd2.ForeColor = System.Drawing.Color.White;
+            lbldd2.Location = new System.Drawing.Point(324, 460);
+            lbldd2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lbldd2.Name = "lbldd2";
+            lbldd2.Size = new System.Drawing.Size(42, 35);
+            lbldd2.TabIndex = 82;
+            lbldd2.Text = "B1";
             // 
             // lbldd1
             // 
-            this.lbldd1.AutoSize = true;
-            this.lbldd1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lbldd1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lbldd1.ForeColor = System.Drawing.Color.White;
-            this.lbldd1.Location = new System.Drawing.Point(201, 368);
-            this.lbldd1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldd1.Name = "lbldd1";
-            this.lbldd1.Size = new System.Drawing.Size(44, 35);
-            this.lbldd1.TabIndex = 81;
-            this.lbldd1.Text = "A1";
+            lbldd1.AutoSize = true;
+            lbldd1.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lbldd1.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lbldd1.ForeColor = System.Drawing.Color.White;
+            lbldd1.Location = new System.Drawing.Point(201, 460);
+            lbldd1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lbldd1.Name = "lbldd1";
+            lbldd1.Size = new System.Drawing.Size(44, 35);
+            lbldd1.TabIndex = 81;
+            lbldd1.Text = "A1";
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(831, 368);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(209, 154);
-            this.button2.TabIndex = 74;
-            this.button2.Text = "Resolver";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            button2.ForeColor = System.Drawing.Color.White;
+            button2.Location = new System.Drawing.Point(831, 460);
+            button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(209, 192);
+            button2.TabIndex = 74;
+            button2.Text = "Resolver";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // c2
             // 
-            this.c2.Location = new System.Drawing.Point(809, 178);
-            this.c2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.c2.Name = "c2";
-            this.c2.Size = new System.Drawing.Size(132, 22);
-            this.c2.TabIndex = 73;
+            c2.Location = new System.Drawing.Point(809, 222);
+            c2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            c2.Name = "c2";
+            c2.Size = new System.Drawing.Size(132, 27);
+            c2.TabIndex = 73;
             // 
             // c1
             // 
-            this.c1.Location = new System.Drawing.Point(809, 129);
-            this.c1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.c1.Name = "c1";
-            this.c1.Size = new System.Drawing.Size(132, 22);
-            this.c1.TabIndex = 72;
+            c1.Location = new System.Drawing.Point(809, 161);
+            c1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            c1.Name = "c1";
+            c1.Size = new System.Drawing.Size(132, 27);
+            c1.TabIndex = 72;
             // 
             // b2
             // 
-            this.b2.Location = new System.Drawing.Point(525, 178);
-            this.b2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.b2.Name = "b2";
-            this.b2.Size = new System.Drawing.Size(132, 22);
-            this.b2.TabIndex = 71;
+            b2.Location = new System.Drawing.Point(525, 222);
+            b2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            b2.Name = "b2";
+            b2.Size = new System.Drawing.Size(132, 27);
+            b2.TabIndex = 71;
             // 
             // b1
             // 
-            this.b1.Location = new System.Drawing.Point(525, 129);
-            this.b1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(132, 22);
-            this.b1.TabIndex = 70;
+            b1.Location = new System.Drawing.Point(525, 161);
+            b1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            b1.Name = "b1";
+            b1.Size = new System.Drawing.Size(132, 27);
+            b1.TabIndex = 70;
             // 
             // a2
             // 
-            this.a2.Location = new System.Drawing.Point(241, 182);
-            this.a2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.a2.Name = "a2";
-            this.a2.Size = new System.Drawing.Size(132, 22);
-            this.a2.TabIndex = 69;
+            a2.Location = new System.Drawing.Point(241, 228);
+            a2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            a2.Name = "a2";
+            a2.Size = new System.Drawing.Size(132, 27);
+            a2.TabIndex = 69;
             // 
             // a1
             // 
-            this.a1.Location = new System.Drawing.Point(241, 129);
-            this.a1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.a1.Name = "a1";
-            this.a1.Size = new System.Drawing.Size(132, 22);
-            this.a1.TabIndex = 68;
+            a1.Location = new System.Drawing.Point(241, 161);
+            a1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            a1.Name = "a1";
+            a1.Size = new System.Drawing.Size(132, 27);
+            a1.TabIndex = 68;
             // 
             // btnregresar
             // 
-            this.btnregresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnregresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnregresar.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnregresar.ForeColor = System.Drawing.Color.White;
-            this.btnregresar.Location = new System.Drawing.Point(36, 15);
-            this.btnregresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnregresar.Name = "btnregresar";
-            this.btnregresar.Size = new System.Drawing.Size(188, 82);
-            this.btnregresar.TabIndex = 67;
-            this.btnregresar.Text = "Regresar";
-            this.btnregresar.UseVisualStyleBackColor = false;
-            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click_1);
+            btnregresar.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            btnregresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnregresar.Font = new System.Drawing.Font("Segoe UI", 12F);
+            btnregresar.ForeColor = System.Drawing.Color.White;
+            btnregresar.Location = new System.Drawing.Point(36, 19);
+            btnregresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            btnregresar.Name = "btnregresar";
+            btnregresar.Size = new System.Drawing.Size(188, 102);
+            btnregresar.TabIndex = 67;
+            btnregresar.Text = "Regresar";
+            btnregresar.UseVisualStyleBackColor = false;
+            btnregresar.Click += btnregresar_Click_1;
             // 
             // abcd1
             // 
-            this.abcd1.AutoSize = true;
-            this.abcd1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd1.ForeColor = System.Drawing.Color.White;
-            this.abcd1.Location = new System.Drawing.Point(133, 182);
-            this.abcd1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd1.Name = "abcd1";
-            this.abcd1.Size = new System.Drawing.Size(57, 28);
-            this.abcd1.TabIndex = 108;
-            this.abcd1.Text = "a2 = ";
+            abcd1.AutoSize = true;
+            abcd1.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd1.ForeColor = System.Drawing.Color.White;
+            abcd1.Location = new System.Drawing.Point(133, 228);
+            abcd1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd1.Name = "abcd1";
+            abcd1.Size = new System.Drawing.Size(57, 28);
+            abcd1.TabIndex = 108;
+            abcd1.Text = "a2 = ";
             // 
             // abcd
             // 
-            this.abcd.AutoSize = true;
-            this.abcd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd.ForeColor = System.Drawing.Color.White;
-            this.abcd.Location = new System.Drawing.Point(133, 129);
-            this.abcd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd.Name = "abcd";
-            this.abcd.Size = new System.Drawing.Size(57, 28);
-            this.abcd.TabIndex = 107;
-            this.abcd.Text = "a1 = ";
+            abcd.AutoSize = true;
+            abcd.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd.ForeColor = System.Drawing.Color.White;
+            abcd.Location = new System.Drawing.Point(133, 161);
+            abcd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd.Name = "abcd";
+            abcd.Size = new System.Drawing.Size(57, 28);
+            abcd.TabIndex = 107;
+            abcd.Text = "a1 = ";
             // 
             // abcd2
             // 
-            this.abcd2.AutoSize = true;
-            this.abcd2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd2.ForeColor = System.Drawing.Color.White;
-            this.abcd2.Location = new System.Drawing.Point(133, 240);
-            this.abcd2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd2.Name = "abcd2";
-            this.abcd2.Size = new System.Drawing.Size(57, 28);
-            this.abcd2.TabIndex = 109;
-            this.abcd2.Text = "a3 = ";
+            abcd2.AutoSize = true;
+            abcd2.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd2.ForeColor = System.Drawing.Color.White;
+            abcd2.Location = new System.Drawing.Point(133, 300);
+            abcd2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd2.Name = "abcd2";
+            abcd2.Size = new System.Drawing.Size(57, 28);
+            abcd2.TabIndex = 109;
+            abcd2.Text = "a3 = ";
             // 
             // abcd5
             // 
-            this.abcd5.AutoSize = true;
-            this.abcd5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd5.ForeColor = System.Drawing.Color.White;
-            this.abcd5.Location = new System.Drawing.Point(428, 240);
-            this.abcd5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd5.Name = "abcd5";
-            this.abcd5.Size = new System.Drawing.Size(59, 28);
-            this.abcd5.TabIndex = 112;
-            this.abcd5.Text = "b3 = ";
+            abcd5.AutoSize = true;
+            abcd5.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd5.ForeColor = System.Drawing.Color.White;
+            abcd5.Location = new System.Drawing.Point(428, 300);
+            abcd5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd5.Name = "abcd5";
+            abcd5.Size = new System.Drawing.Size(59, 28);
+            abcd5.TabIndex = 112;
+            abcd5.Text = "b3 = ";
             // 
             // abcd4
             // 
-            this.abcd4.AutoSize = true;
-            this.abcd4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd4.ForeColor = System.Drawing.Color.White;
-            this.abcd4.Location = new System.Drawing.Point(428, 182);
-            this.abcd4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd4.Name = "abcd4";
-            this.abcd4.Size = new System.Drawing.Size(59, 28);
-            this.abcd4.TabIndex = 111;
-            this.abcd4.Text = "b2 = ";
+            abcd4.AutoSize = true;
+            abcd4.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd4.ForeColor = System.Drawing.Color.White;
+            abcd4.Location = new System.Drawing.Point(428, 228);
+            abcd4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd4.Name = "abcd4";
+            abcd4.Size = new System.Drawing.Size(59, 28);
+            abcd4.TabIndex = 111;
+            abcd4.Text = "b2 = ";
             // 
             // abcd3
             // 
-            this.abcd3.AutoSize = true;
-            this.abcd3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd3.ForeColor = System.Drawing.Color.White;
-            this.abcd3.Location = new System.Drawing.Point(428, 129);
-            this.abcd3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd3.Name = "abcd3";
-            this.abcd3.Size = new System.Drawing.Size(59, 28);
-            this.abcd3.TabIndex = 110;
-            this.abcd3.Text = "b1 = ";
+            abcd3.AutoSize = true;
+            abcd3.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd3.ForeColor = System.Drawing.Color.White;
+            abcd3.Location = new System.Drawing.Point(428, 161);
+            abcd3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd3.Name = "abcd3";
+            abcd3.Size = new System.Drawing.Size(59, 28);
+            abcd3.TabIndex = 110;
+            abcd3.Text = "b1 = ";
             // 
             // abcd8
             // 
-            this.abcd8.AutoSize = true;
-            this.abcd8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd8.ForeColor = System.Drawing.Color.White;
-            this.abcd8.Location = new System.Drawing.Point(715, 236);
-            this.abcd8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd8.Name = "abcd8";
-            this.abcd8.Size = new System.Drawing.Size(56, 28);
-            this.abcd8.TabIndex = 115;
-            this.abcd8.Text = "c3 = ";
+            abcd8.AutoSize = true;
+            abcd8.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd8.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd8.ForeColor = System.Drawing.Color.White;
+            abcd8.Location = new System.Drawing.Point(715, 295);
+            abcd8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd8.Name = "abcd8";
+            abcd8.Size = new System.Drawing.Size(56, 28);
+            abcd8.TabIndex = 115;
+            abcd8.Text = "c3 = ";
             // 
             // abcd7
             // 
-            this.abcd7.AutoSize = true;
-            this.abcd7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd7.ForeColor = System.Drawing.Color.White;
-            this.abcd7.Location = new System.Drawing.Point(715, 178);
-            this.abcd7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd7.Name = "abcd7";
-            this.abcd7.Size = new System.Drawing.Size(56, 28);
-            this.abcd7.TabIndex = 114;
-            this.abcd7.Text = "c2 = ";
+            abcd7.AutoSize = true;
+            abcd7.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd7.ForeColor = System.Drawing.Color.White;
+            abcd7.Location = new System.Drawing.Point(715, 222);
+            abcd7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd7.Name = "abcd7";
+            abcd7.Size = new System.Drawing.Size(56, 28);
+            abcd7.TabIndex = 114;
+            abcd7.Text = "c2 = ";
             // 
             // abcd6
             // 
-            this.abcd6.AutoSize = true;
-            this.abcd6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd6.ForeColor = System.Drawing.Color.White;
-            this.abcd6.Location = new System.Drawing.Point(715, 126);
-            this.abcd6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd6.Name = "abcd6";
-            this.abcd6.Size = new System.Drawing.Size(56, 28);
-            this.abcd6.TabIndex = 113;
-            this.abcd6.Text = "c1 = ";
+            abcd6.AutoSize = true;
+            abcd6.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd6.ForeColor = System.Drawing.Color.White;
+            abcd6.Location = new System.Drawing.Point(715, 158);
+            abcd6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd6.Name = "abcd6";
+            abcd6.Size = new System.Drawing.Size(56, 28);
+            abcd6.TabIndex = 113;
+            abcd6.Text = "c1 = ";
             // 
             // abcd11
             // 
-            this.abcd11.AutoSize = true;
-            this.abcd11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd11.ForeColor = System.Drawing.Color.White;
-            this.abcd11.Location = new System.Drawing.Point(1035, 236);
-            this.abcd11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd11.Name = "abcd11";
-            this.abcd11.Size = new System.Drawing.Size(59, 28);
-            this.abcd11.TabIndex = 118;
-            this.abcd11.Text = "d3 = ";
+            abcd11.AutoSize = true;
+            abcd11.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd11.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd11.ForeColor = System.Drawing.Color.White;
+            abcd11.Location = new System.Drawing.Point(1035, 295);
+            abcd11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd11.Name = "abcd11";
+            abcd11.Size = new System.Drawing.Size(59, 28);
+            abcd11.TabIndex = 118;
+            abcd11.Text = "d3 = ";
             // 
             // abcd10
             // 
-            this.abcd10.AutoSize = true;
-            this.abcd10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd10.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd10.ForeColor = System.Drawing.Color.White;
-            this.abcd10.Location = new System.Drawing.Point(1035, 178);
-            this.abcd10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd10.Name = "abcd10";
-            this.abcd10.Size = new System.Drawing.Size(59, 28);
-            this.abcd10.TabIndex = 117;
-            this.abcd10.Text = "d2 = ";
+            abcd10.AutoSize = true;
+            abcd10.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd10.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd10.ForeColor = System.Drawing.Color.White;
+            abcd10.Location = new System.Drawing.Point(1035, 222);
+            abcd10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd10.Name = "abcd10";
+            abcd10.Size = new System.Drawing.Size(59, 28);
+            abcd10.TabIndex = 117;
+            abcd10.Text = "d2 = ";
             // 
             // abcd9
             // 
-            this.abcd9.AutoSize = true;
-            this.abcd9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.abcd9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.abcd9.ForeColor = System.Drawing.Color.White;
-            this.abcd9.Location = new System.Drawing.Point(1035, 126);
-            this.abcd9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.abcd9.Name = "abcd9";
-            this.abcd9.Size = new System.Drawing.Size(59, 28);
-            this.abcd9.TabIndex = 116;
-            this.abcd9.Text = "d1 = ";
+            abcd9.AutoSize = true;
+            abcd9.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            abcd9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            abcd9.ForeColor = System.Drawing.Color.White;
+            abcd9.Location = new System.Drawing.Point(1035, 158);
+            abcd9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            abcd9.Name = "abcd9";
+            abcd9.Size = new System.Drawing.Size(59, 28);
+            abcd9.TabIndex = 116;
+            abcd9.Text = "d1 = ";
             // 
             // bcd
             // 
-            this.bcd.AutoSize = true;
-            this.bcd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.bcd.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.bcd.ForeColor = System.Drawing.Color.White;
-            this.bcd.Location = new System.Drawing.Point(7, 367);
-            this.bcd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.bcd.Name = "bcd";
-            this.bcd.Size = new System.Drawing.Size(78, 35);
-            this.bcd.TabIndex = 125;
-            this.bcd.Text = "Delta:";
+            bcd.AutoSize = true;
+            bcd.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            bcd.Font = new System.Drawing.Font("Segoe UI", 15F);
+            bcd.ForeColor = System.Drawing.Color.White;
+            bcd.Location = new System.Drawing.Point(7, 459);
+            bcd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            bcd.Name = "bcd";
+            bcd.Size = new System.Drawing.Size(78, 35);
+            bcd.TabIndex = 125;
+            bcd.Text = "Delta:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(497, 382);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 16);
-            this.label1.TabIndex = 126;
-            this.label1.Text = "=";
+            label1.AutoSize = true;
+            label1.BackColor = System.Drawing.Color.FromArgb(28, 28, 48);
+            label1.ForeColor = System.Drawing.Color.White;
+            label1.Location = new System.Drawing.Point(497, 478);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(19, 20);
+            label1.TabIndex = 126;
+            label1.Text = "=";
             // 
             // lblrdx1
             // 
-            this.lblrdx1.AutoSize = true;
-            this.lblrdx1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lblrdx1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lblrdx1.ForeColor = System.Drawing.Color.White;
-            this.lblrdx1.Location = new System.Drawing.Point(143, 468);
-            this.lblrdx1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblrdx1.Name = "lblrdx1";
-            this.lblrdx1.Size = new System.Drawing.Size(48, 35);
-            this.lblrdx1.TabIndex = 127;
-            this.lblrdx1.Text = "X1:";
+            lblrdx1.AutoSize = true;
+            lblrdx1.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lblrdx1.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lblrdx1.ForeColor = System.Drawing.Color.White;
+            lblrdx1.Location = new System.Drawing.Point(143, 585);
+            lblrdx1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblrdx1.Name = "lblrdx1";
+            lblrdx1.Size = new System.Drawing.Size(48, 35);
+            lblrdx1.TabIndex = 127;
+            lblrdx1.Text = "X1:";
             // 
             // lblrdx2
             // 
-            this.lblrdx2.AutoSize = true;
-            this.lblrdx2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lblrdx2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lblrdx2.ForeColor = System.Drawing.Color.White;
-            this.lblrdx2.Location = new System.Drawing.Point(327, 468);
-            this.lblrdx2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblrdx2.Name = "lblrdx2";
-            this.lblrdx2.Size = new System.Drawing.Size(48, 35);
-            this.lblrdx2.TabIndex = 128;
-            this.lblrdx2.Text = "X2:";
+            lblrdx2.AutoSize = true;
+            lblrdx2.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lblrdx2.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lblrdx2.ForeColor = System.Drawing.Color.White;
+            lblrdx2.Location = new System.Drawing.Point(327, 585);
+            lblrdx2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblrdx2.Name = "lblrdx2";
+            lblrdx2.Size = new System.Drawing.Size(48, 35);
+            lblrdx2.TabIndex = 128;
+            lblrdx2.Text = "X2:";
             // 
             // lblrdx3
             // 
-            this.lblrdx3.AutoSize = true;
-            this.lblrdx3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.lblrdx3.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lblrdx3.ForeColor = System.Drawing.Color.White;
-            this.lblrdx3.Location = new System.Drawing.Point(524, 469);
-            this.lblrdx3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblrdx3.Name = "lblrdx3";
-            this.lblrdx3.Size = new System.Drawing.Size(48, 35);
-            this.lblrdx3.TabIndex = 129;
-            this.lblrdx3.Text = "X3:";
+            lblrdx3.AutoSize = true;
+            lblrdx3.BackColor = System.Drawing.Color.FromArgb(255, 85, 85);
+            lblrdx3.Font = new System.Drawing.Font("Segoe UI", 15F);
+            lblrdx3.ForeColor = System.Drawing.Color.White;
+            lblrdx3.Location = new System.Drawing.Point(524, 586);
+            lblrdx3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblrdx3.Name = "lblrdx3";
+            lblrdx3.Size = new System.Drawing.Size(48, 35);
+            lblrdx3.TabIndex = 129;
+            lblrdx3.Text = "X3:";
+            // 
+            // btnMainMenu
+            // 
+            btnMainMenu.Location = new System.Drawing.Point(54, 725);
+            btnMainMenu.Name = "btnMainMenu";
+            btnMainMenu.Size = new System.Drawing.Size(94, 29);
+            btnMainMenu.TabIndex = 130;
+            btnMainMenu.Text = "Salir";
+            btnMainMenu.UseVisualStyleBackColor = true;
+            btnMainMenu.Click += btnMainMenu_Click;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(1312, 636);
-            this.Controls.Add(this.lblrdx3);
-            this.Controls.Add(this.lblrdx2);
-            this.Controls.Add(this.lblrdx1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.bcd);
-            this.Controls.Add(this.abcd11);
-            this.Controls.Add(this.abcd10);
-            this.Controls.Add(this.abcd9);
-            this.Controls.Add(this.abcd8);
-            this.Controls.Add(this.abcd7);
-            this.Controls.Add(this.abcd6);
-            this.Controls.Add(this.abcd5);
-            this.Controls.Add(this.abcd4);
-            this.Controls.Add(this.abcd3);
-            this.Controls.Add(this.abcd2);
-            this.Controls.Add(this.abcd1);
-            this.Controls.Add(this.abcd);
-            this.Controls.Add(this.lbldd3);
-            this.Controls.Add(this.d3);
-            this.Controls.Add(this.d2);
-            this.Controls.Add(this.d1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.lbldx3);
-            this.Controls.Add(this.c3);
-            this.Controls.Add(this.b3);
-            this.Controls.Add(this.a3);
-            this.Controls.Add(this.borrar2);
-            this.Controls.Add(this.lbldx2);
-            this.Controls.Add(this.lbldx1);
-            this.Controls.Add(this.lbldelta);
-            this.Controls.Add(this.lbldd2);
-            this.Controls.Add(this.lbldd1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.c2);
-            this.Controls.Add(this.c1);
-            this.Controls.Add(this.b2);
-            this.Controls.Add(this.b1);
-            this.Controls.Add(this.a2);
-            this.Controls.Add(this.a1);
-            this.Controls.Add(this.btnregresar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form3";
-            this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load_1);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(28, 28, 48);
+            ClientSize = new System.Drawing.Size(1312, 795);
+            Controls.Add(btnMainMenu);
+            Controls.Add(lblrdx3);
+            Controls.Add(lblrdx2);
+            Controls.Add(lblrdx1);
+            Controls.Add(label1);
+            Controls.Add(bcd);
+            Controls.Add(abcd11);
+            Controls.Add(abcd10);
+            Controls.Add(abcd9);
+            Controls.Add(abcd8);
+            Controls.Add(abcd7);
+            Controls.Add(abcd6);
+            Controls.Add(abcd5);
+            Controls.Add(abcd4);
+            Controls.Add(abcd3);
+            Controls.Add(abcd2);
+            Controls.Add(abcd1);
+            Controls.Add(abcd);
+            Controls.Add(lbldd3);
+            Controls.Add(d3);
+            Controls.Add(d2);
+            Controls.Add(d1);
+            Controls.Add(label4);
+            Controls.Add(label5);
+            Controls.Add(label6);
+            Controls.Add(lbldx3);
+            Controls.Add(c3);
+            Controls.Add(b3);
+            Controls.Add(a3);
+            Controls.Add(borrar2);
+            Controls.Add(lbldx2);
+            Controls.Add(lbldx1);
+            Controls.Add(lbldelta);
+            Controls.Add(lbldd2);
+            Controls.Add(lbldd1);
+            Controls.Add(button2);
+            Controls.Add(c2);
+            Controls.Add(c1);
+            Controls.Add(b2);
+            Controls.Add(b1);
+            Controls.Add(a2);
+            Controls.Add(a1);
+            Controls.Add(btnregresar);
+            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            Name = "Form3";
+            Text = "Form3";
+            Load += Form3_Load_1;
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -661,5 +673,6 @@
         private System.Windows.Forms.Label lblrdx1;
         private System.Windows.Forms.Label lblrdx2;
         private System.Windows.Forms.Label lblrdx3;
+        private System.Windows.Forms.Button btnMainMenu;
     }
 }

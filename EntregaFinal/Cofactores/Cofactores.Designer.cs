@@ -29,287 +29,323 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cofactores));
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.grpDimension = new System.Windows.Forms.GroupBox();
-            this.rdb3x3 = new System.Windows.Forms.RadioButton();
-            this.rdb2x2 = new System.Windows.Forms.RadioButton();
-            this.dgvMatriz = new System.Windows.Forms.DataGridView();
-            this.btnResolver = new System.Windows.Forms.Button();
-            this.grpResultados = new System.Windows.Forms.GroupBox();
-            this.txtResultados = new System.Windows.Forms.TextBox();
-            this.btnCorregir = new System.Windows.Forms.Button();
-            this.btnConfirmar = new System.Windows.Forms.Button();
-            this.lblConfirmacion = new System.Windows.Forms.Label();
-            this.pbSistema2x2 = new System.Windows.Forms.PictureBox();
-            this.pbSistema3x3 = new System.Windows.Forms.PictureBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.lblindicaciones = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.grpDimension.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMatriz)).BeginInit();
-            this.grpResultados.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSistema2x2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSistema3x3)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            lblTitulo = new System.Windows.Forms.Label();
+            grpDimension = new System.Windows.Forms.GroupBox();
+            rdb3x3 = new System.Windows.Forms.RadioButton();
+            rdb2x2 = new System.Windows.Forms.RadioButton();
+            dgvMatriz = new System.Windows.Forms.DataGridView();
+            btnResolver = new System.Windows.Forms.Button();
+            grpResultados = new System.Windows.Forms.GroupBox();
+            txtResultados = new System.Windows.Forms.TextBox();
+            btnCorregir = new System.Windows.Forms.Button();
+            btnConfirmar = new System.Windows.Forms.Button();
+            lblConfirmacion = new System.Windows.Forms.Label();
+            pbSistema2x2 = new System.Windows.Forms.PictureBox();
+            pbSistema3x3 = new System.Windows.Forms.PictureBox();
+            btnLimpiar = new System.Windows.Forms.Button();
+            lblindicaciones = new System.Windows.Forms.Label();
+            panel5 = new System.Windows.Forms.Panel();
+            panel6 = new System.Windows.Forms.Panel();
+            panel2 = new System.Windows.Forms.Panel();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            btnMainMenu = new System.Windows.Forms.Button();
+            grpDimension.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvMatriz).BeginInit();
+            grpResultados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbSistema2x2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbSistema3x3).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblTitulo.Location = new System.Drawing.Point(112, 13);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(687, 37);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Resolver Sistemas de Ecuaciones Por Cofactores";
+            lblTitulo.AutoSize = true;
+            lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            lblTitulo.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
+            lblTitulo.Location = new System.Drawing.Point(112, 16);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new System.Drawing.Size(687, 37);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Resolver Sistemas de Ecuaciones Por Cofactores";
             // 
             // grpDimension
             // 
-            this.grpDimension.BackColor = System.Drawing.Color.Transparent;
-            this.grpDimension.Controls.Add(this.rdb3x3);
-            this.grpDimension.Controls.Add(this.rdb2x2);
-            this.grpDimension.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpDimension.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.grpDimension.Location = new System.Drawing.Point(41, 60);
-            this.grpDimension.Name = "grpDimension";
-            this.grpDimension.Size = new System.Drawing.Size(272, 69);
-            this.grpDimension.TabIndex = 1;
-            this.grpDimension.TabStop = false;
-            this.grpDimension.Text = "Dimension del sistema";
+            grpDimension.BackColor = System.Drawing.Color.DarkGoldenrod;
+            grpDimension.Controls.Add(rdb3x3);
+            grpDimension.Controls.Add(rdb2x2);
+            grpDimension.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            grpDimension.ForeColor = System.Drawing.Color.AntiqueWhite;
+            grpDimension.Location = new System.Drawing.Point(41, 75);
+            grpDimension.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            grpDimension.Name = "grpDimension";
+            grpDimension.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            grpDimension.Size = new System.Drawing.Size(272, 86);
+            grpDimension.TabIndex = 1;
+            grpDimension.TabStop = false;
+            grpDimension.Text = "Dimension del sistema";
             // 
             // rdb3x3
             // 
-            this.rdb3x3.AutoSize = true;
-            this.rdb3x3.Location = new System.Drawing.Point(81, 31);
-            this.rdb3x3.Name = "rdb3x3";
-            this.rdb3x3.Size = new System.Drawing.Size(61, 28);
-            this.rdb3x3.TabIndex = 3;
-            this.rdb3x3.TabStop = true;
-            this.rdb3x3.Text = "3x3";
-            this.rdb3x3.UseVisualStyleBackColor = true;
-            this.rdb3x3.CheckedChanged += new System.EventHandler(this.rdb3x3_CheckedChanged);
+            rdb3x3.AutoSize = true;
+            rdb3x3.Location = new System.Drawing.Point(81, 39);
+            rdb3x3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            rdb3x3.Name = "rdb3x3";
+            rdb3x3.Size = new System.Drawing.Size(61, 28);
+            rdb3x3.TabIndex = 3;
+            rdb3x3.TabStop = true;
+            rdb3x3.Text = "3x3";
+            rdb3x3.UseVisualStyleBackColor = true;
+            rdb3x3.CheckedChanged += rdb3x3_CheckedChanged;
             // 
             // rdb2x2
             // 
-            this.rdb2x2.AutoSize = true;
-            this.rdb2x2.Location = new System.Drawing.Point(6, 30);
-            this.rdb2x2.Name = "rdb2x2";
-            this.rdb2x2.Size = new System.Drawing.Size(61, 28);
-            this.rdb2x2.TabIndex = 2;
-            this.rdb2x2.TabStop = true;
-            this.rdb2x2.Text = "2x2";
-            this.rdb2x2.UseVisualStyleBackColor = true;
-            this.rdb2x2.CheckedChanged += new System.EventHandler(this.rdb2x2_CheckedChanged);
+            rdb2x2.AutoSize = true;
+            rdb2x2.Location = new System.Drawing.Point(6, 38);
+            rdb2x2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            rdb2x2.Name = "rdb2x2";
+            rdb2x2.Size = new System.Drawing.Size(61, 28);
+            rdb2x2.TabIndex = 2;
+            rdb2x2.TabStop = true;
+            rdb2x2.Text = "2x2";
+            rdb2x2.UseVisualStyleBackColor = true;
+            rdb2x2.CheckedChanged += rdb2x2_CheckedChanged;
             // 
             // dgvMatriz
             // 
-            this.dgvMatriz.BackgroundColor = System.Drawing.Color.DarkGoldenrod;
-            this.dgvMatriz.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMatriz.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dgvMatriz.Location = new System.Drawing.Point(41, 135);
-            this.dgvMatriz.Name = "dgvMatriz";
-            this.dgvMatriz.RowHeadersWidth = 51;
-            this.dgvMatriz.RowTemplate.Height = 24;
-            this.dgvMatriz.Size = new System.Drawing.Size(353, 118);
-            this.dgvMatriz.TabIndex = 2;
+            dgvMatriz.BackgroundColor = System.Drawing.Color.DarkGoldenrod;
+            dgvMatriz.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMatriz.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            dgvMatriz.Location = new System.Drawing.Point(41, 169);
+            dgvMatriz.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dgvMatriz.Name = "dgvMatriz";
+            dgvMatriz.RowHeadersWidth = 51;
+            dgvMatriz.RowTemplate.Height = 24;
+            dgvMatriz.Size = new System.Drawing.Size(353, 148);
+            dgvMatriz.TabIndex = 2;
             // 
             // btnResolver
             // 
-            this.btnResolver.BackColor = System.Drawing.Color.OliveDrab;
-            this.btnResolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResolver.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResolver.Location = new System.Drawing.Point(41, 280);
-            this.btnResolver.Name = "btnResolver";
-            this.btnResolver.Size = new System.Drawing.Size(128, 34);
-            this.btnResolver.TabIndex = 3;
-            this.btnResolver.Text = "Resolver sistema";
-            this.btnResolver.UseVisualStyleBackColor = false;
-            this.btnResolver.Click += new System.EventHandler(this.btnResolver_Click);
+            btnResolver.BackColor = System.Drawing.Color.OliveDrab;
+            btnResolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnResolver.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnResolver.Location = new System.Drawing.Point(41, 350);
+            btnResolver.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnResolver.Name = "btnResolver";
+            btnResolver.Size = new System.Drawing.Size(128, 42);
+            btnResolver.TabIndex = 3;
+            btnResolver.Text = "Resolver sistema";
+            btnResolver.UseVisualStyleBackColor = false;
+            btnResolver.Click += btnResolver_Click;
             // 
             // grpResultados
             // 
-            this.grpResultados.BackColor = System.Drawing.Color.Transparent;
-            this.grpResultados.Controls.Add(this.txtResultados);
-            this.grpResultados.Controls.Add(this.btnCorregir);
-            this.grpResultados.Controls.Add(this.btnConfirmar);
-            this.grpResultados.Controls.Add(this.lblConfirmacion);
-            this.grpResultados.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpResultados.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.grpResultados.Location = new System.Drawing.Point(41, 341);
-            this.grpResultados.Name = "grpResultados";
-            this.grpResultados.Size = new System.Drawing.Size(604, 225);
-            this.grpResultados.TabIndex = 4;
-            this.grpResultados.TabStop = false;
-            this.grpResultados.Text = "Resultados y confirmación";
+            grpResultados.BackColor = System.Drawing.Color.DarkGoldenrod;
+            grpResultados.Controls.Add(txtResultados);
+            grpResultados.Controls.Add(btnCorregir);
+            grpResultados.Controls.Add(btnConfirmar);
+            grpResultados.Controls.Add(lblConfirmacion);
+            grpResultados.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            grpResultados.ForeColor = System.Drawing.Color.WhiteSmoke;
+            grpResultados.Location = new System.Drawing.Point(41, 426);
+            grpResultados.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            grpResultados.Name = "grpResultados";
+            grpResultados.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            grpResultados.Size = new System.Drawing.Size(604, 281);
+            grpResultados.TabIndex = 4;
+            grpResultados.TabStop = false;
+            grpResultados.Text = "Resultados y confirmación";
             // 
             // txtResultados
             // 
-            this.txtResultados.Location = new System.Drawing.Point(311, 28);
-            this.txtResultados.Multiline = true;
-            this.txtResultados.Name = "txtResultados";
-            this.txtResultados.Size = new System.Drawing.Size(260, 180);
-            this.txtResultados.TabIndex = 5;
+            txtResultados.Location = new System.Drawing.Point(311, 35);
+            txtResultados.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtResultados.Multiline = true;
+            txtResultados.Name = "txtResultados";
+            txtResultados.Size = new System.Drawing.Size(260, 224);
+            txtResultados.TabIndex = 5;
             // 
             // btnCorregir
             // 
-            this.btnCorregir.BackColor = System.Drawing.Color.Firebrick;
-            this.btnCorregir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCorregir.ForeColor = System.Drawing.Color.Black;
-            this.btnCorregir.Location = new System.Drawing.Point(148, 85);
-            this.btnCorregir.Name = "btnCorregir";
-            this.btnCorregir.Size = new System.Drawing.Size(105, 36);
-            this.btnCorregir.TabIndex = 6;
-            this.btnCorregir.Text = "Corregir";
-            this.btnCorregir.UseVisualStyleBackColor = false;
-            this.btnCorregir.Visible = false;
-            this.btnCorregir.Click += new System.EventHandler(this.btnCorregir_Click);
+            btnCorregir.BackColor = System.Drawing.Color.Firebrick;
+            btnCorregir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCorregir.ForeColor = System.Drawing.Color.Black;
+            btnCorregir.Location = new System.Drawing.Point(148, 106);
+            btnCorregir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnCorregir.Name = "btnCorregir";
+            btnCorregir.Size = new System.Drawing.Size(105, 45);
+            btnCorregir.TabIndex = 6;
+            btnCorregir.Text = "Corregir";
+            btnCorregir.UseVisualStyleBackColor = false;
+            btnCorregir.Visible = false;
+            btnCorregir.Click += btnCorregir_Click;
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.OliveDrab;
-            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirmar.Location = new System.Drawing.Point(10, 85);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(132, 36);
-            this.btnConfirmar.TabIndex = 5;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = false;
-            this.btnConfirmar.Visible = false;
-            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            btnConfirmar.BackColor = System.Drawing.Color.OliveDrab;
+            btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnConfirmar.ForeColor = System.Drawing.Color.Black;
+            btnConfirmar.Location = new System.Drawing.Point(10, 106);
+            btnConfirmar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnConfirmar.Name = "btnConfirmar";
+            btnConfirmar.Size = new System.Drawing.Size(132, 45);
+            btnConfirmar.TabIndex = 5;
+            btnConfirmar.Text = "Confirmar";
+            btnConfirmar.UseVisualStyleBackColor = false;
+            btnConfirmar.Visible = false;
+            btnConfirmar.Click += btnConfirmar_Click;
             // 
             // lblConfirmacion
             // 
-            this.lblConfirmacion.AutoSize = true;
-            this.lblConfirmacion.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblConfirmacion.Location = new System.Drawing.Point(16, 58);
-            this.lblConfirmacion.Name = "lblConfirmacion";
-            this.lblConfirmacion.Size = new System.Drawing.Size(223, 24);
-            this.lblConfirmacion.TabIndex = 5;
-            this.lblConfirmacion.Text = "¿Son correctos los datos?";
+            lblConfirmacion.AutoSize = true;
+            lblConfirmacion.ForeColor = System.Drawing.Color.WhiteSmoke;
+            lblConfirmacion.Location = new System.Drawing.Point(16, 72);
+            lblConfirmacion.Name = "lblConfirmacion";
+            lblConfirmacion.Size = new System.Drawing.Size(223, 24);
+            lblConfirmacion.TabIndex = 5;
+            lblConfirmacion.Text = "¿Son correctos los datos?";
             // 
             // pbSistema2x2
             // 
-            this.pbSistema2x2.Image = ((System.Drawing.Image)(resources.GetObject("pbSistema2x2.Image")));
-            this.pbSistema2x2.Location = new System.Drawing.Point(449, 151);
-            this.pbSistema2x2.Name = "pbSistema2x2";
-            this.pbSistema2x2.Size = new System.Drawing.Size(270, 69);
-            this.pbSistema2x2.TabIndex = 5;
-            this.pbSistema2x2.TabStop = false;
-            this.pbSistema2x2.Visible = false;
+            pbSistema2x2.Image = (System.Drawing.Image)resources.GetObject("pbSistema2x2.Image");
+            pbSistema2x2.Location = new System.Drawing.Point(449, 194);
+            pbSistema2x2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pbSistema2x2.Name = "pbSistema2x2";
+            pbSistema2x2.Size = new System.Drawing.Size(209, 49);
+            pbSistema2x2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            pbSistema2x2.TabIndex = 5;
+            pbSistema2x2.TabStop = false;
+            pbSistema2x2.Visible = false;
+            pbSistema2x2.Click += pbSistema2x2_Click;
             // 
             // pbSistema3x3
             // 
-            this.pbSistema3x3.Image = ((System.Drawing.Image)(resources.GetObject("pbSistema3x3.Image")));
-            this.pbSistema3x3.Location = new System.Drawing.Point(449, 144);
-            this.pbSistema3x3.Name = "pbSistema3x3";
-            this.pbSistema3x3.Size = new System.Drawing.Size(351, 109);
-            this.pbSistema3x3.TabIndex = 6;
-            this.pbSistema3x3.TabStop = false;
-            this.pbSistema3x3.Visible = false;
+            pbSistema3x3.Image = (System.Drawing.Image)resources.GetObject("pbSistema3x3.Image");
+            pbSistema3x3.Location = new System.Drawing.Point(449, 184);
+            pbSistema3x3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pbSistema3x3.Name = "pbSistema3x3";
+            pbSistema3x3.Size = new System.Drawing.Size(259, 90);
+            pbSistema3x3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            pbSistema3x3.TabIndex = 6;
+            pbSistema3x3.TabStop = false;
+            pbSistema3x3.Visible = false;
+            pbSistema3x3.Click += pbSistema3x3_Click;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.Firebrick;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(175, 280);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(128, 34);
-            this.btnLimpiar.TabIndex = 7;
-            this.btnLimpiar.Text = "Limpiar todo";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            btnLimpiar.BackColor = System.Drawing.Color.Firebrick;
+            btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnLimpiar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnLimpiar.Location = new System.Drawing.Point(175, 350);
+            btnLimpiar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new System.Drawing.Size(128, 42);
+            btnLimpiar.TabIndex = 7;
+            btnLimpiar.Text = "Limpiar todo";
+            btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // lblindicaciones
             // 
-            this.lblindicaciones.AutoSize = true;
-            this.lblindicaciones.BackColor = System.Drawing.Color.Transparent;
-            this.lblindicaciones.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblindicaciones.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblindicaciones.Location = new System.Drawing.Point(440, 117);
-            this.lblindicaciones.Name = "lblindicaciones";
-            this.lblindicaciones.Size = new System.Drawing.Size(374, 24);
-            this.lblindicaciones.TabIndex = 8;
-            this.lblindicaciones.Text = "Recuerda que un sistema tiene esta forma:";
+            lblindicaciones.AutoSize = true;
+            lblindicaciones.BackColor = System.Drawing.Color.Transparent;
+            lblindicaciones.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lblindicaciones.ForeColor = System.Drawing.Color.WhiteSmoke;
+            lblindicaciones.Location = new System.Drawing.Point(440, 146);
+            lblindicaciones.Name = "lblindicaciones";
+            lblindicaciones.Size = new System.Drawing.Size(374, 24);
+            lblindicaciones.TabIndex = 8;
+            lblindicaciones.Text = "Recuerda que un sistema tiene esta forma:";
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel5.Location = new System.Drawing.Point(-2, 572);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(905, 27);
-            this.panel5.TabIndex = 10;
+            panel5.BackColor = System.Drawing.Color.MidnightBlue;
+            panel5.Location = new System.Drawing.Point(-2, 715);
+            panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel5.Name = "panel5";
+            panel5.Size = new System.Drawing.Size(905, 34);
+            panel5.TabIndex = 10;
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panel6.Location = new System.Drawing.Point(-5, 596);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(905, 31);
-            this.panel6.TabIndex = 11;
+            panel6.BackColor = System.Drawing.Color.DarkGoldenrod;
+            panel6.Location = new System.Drawing.Point(-5, 745);
+            panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel6.Name = "panel6";
+            panel6.Size = new System.Drawing.Size(905, 39);
+            panel6.TabIndex = 11;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.lblTitulo);
-            this.panel2.Location = new System.Drawing.Point(1, -4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(902, 58);
-            this.panel2.TabIndex = 10;
+            panel2.BackColor = System.Drawing.Color.DarkGoldenrod;
+            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(lblTitulo);
+            panel2.Location = new System.Drawing.Point(1, -5);
+            panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(902, 72);
+            panel2.TabIndex = 10;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new System.Drawing.Point(14, 4);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(93, 64);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
-            // Form1
+            // btnMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(898, 621);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.lblindicaciones);
-            this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.pbSistema3x3);
-            this.Controls.Add(this.pbSistema2x2);
-            this.Controls.Add(this.grpResultados);
-            this.Controls.Add(this.btnResolver);
-            this.Controls.Add(this.dgvMatriz);
-            this.Controls.Add(this.grpDimension);
-            this.DoubleBuffered = true;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.grpDimension.ResumeLayout(false);
-            this.grpDimension.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMatriz)).EndInit();
-            this.grpResultados.ResumeLayout(false);
-            this.grpResultados.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSistema2x2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSistema3x3)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            btnMainMenu.BackColor = System.Drawing.Color.RoyalBlue;
+            btnMainMenu.Location = new System.Drawing.Point(773, 656);
+            btnMainMenu.Name = "btnMainMenu";
+            btnMainMenu.Size = new System.Drawing.Size(94, 29);
+            btnMainMenu.TabIndex = 12;
+            btnMainMenu.Text = "Regresar";
+            btnMainMenu.UseVisualStyleBackColor = false;
+            btnMainMenu.Click += btnMainMenu_Click;
+            // 
+            // Cofactores
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.DarkGoldenrod;
+            BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            ClientSize = new System.Drawing.Size(898, 776);
+            Controls.Add(btnMainMenu);
+            Controls.Add(panel2);
+            Controls.Add(panel6);
+            Controls.Add(panel5);
+            Controls.Add(lblindicaciones);
+            Controls.Add(btnLimpiar);
+            Controls.Add(pbSistema3x3);
+            Controls.Add(pbSistema2x2);
+            Controls.Add(grpResultados);
+            Controls.Add(btnResolver);
+            Controls.Add(dgvMatriz);
+            Controls.Add(grpDimension);
+            DoubleBuffered = true;
+            ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "Cofactores";
+            Text = "Form1";
+            grpDimension.ResumeLayout(false);
+            grpDimension.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvMatriz).EndInit();
+            grpResultados.ResumeLayout(false);
+            grpResultados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbSistema2x2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbSistema3x3).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -334,6 +370,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnMainMenu;
     }
 }
 

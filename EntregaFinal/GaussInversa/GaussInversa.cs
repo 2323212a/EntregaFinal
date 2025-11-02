@@ -16,8 +16,15 @@ namespace EntregaFinal
         public GaussInversa()
         {
             InitializeComponent();
+            this.FormClosed += (s, e) => VolverMenu();
         }
-
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
+        }
         private void btnmatriz2x2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -40,6 +47,11 @@ namespace EntregaFinal
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GaussInversa_Load(object sender, EventArgs e)
         {
 
         }
