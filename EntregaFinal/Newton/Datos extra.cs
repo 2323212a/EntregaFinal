@@ -199,11 +199,13 @@ namespace EntregaFinal.Newton
                 return;
             }
 
+            // ✅ Mostrar la siguiente ventana en primer plano (modal)
             Tabla tablaForm = new Tabla(funcion, x0, error);
-            tablaForm.Show();
-            this.Hide();
-            this.Close();
+            this.Hide();                // ocultar el actual
+            tablaForm.ShowDialog();     // muestra Tabla al frente y bloquea esta ventana
+            this.Close();               // cerrar Datos_extra cuando se cierre Tabla
         }
+
 
         private void button4_Click(object sender, EventArgs e)
         {

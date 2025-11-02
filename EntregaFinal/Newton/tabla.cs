@@ -23,8 +23,15 @@ namespace EntregaFinal.Newton
             AgregarEtiquetasInformativas();
             InicializarTabla();
             EjecutarMetodo();
+            this.FormClosed += (s, e) => VolverMenu();
         }
-
+        private void VolverMenu()
+        {
+            var menu = new MainMenu();
+            menu.StartPosition = FormStartPosition.CenterScreen;
+            menu.Show();
+            this.Hide();
+        }
         private void AgregarEtiquetasInformativas()
         {
          
@@ -125,7 +132,20 @@ private void EjecutarMetodo()
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // Intentar obtener el formulario MainMenu si ya está abierto
+            Form mainMenu = Application.OpenForms["MainMenu"];
+
+            if (mainMenu != null)
+            {
+                // Si ya existe, solo lo mostramos
+                mainMenu.Show();
+            }
+            else
+            {
+                // Si no existe, lo creamos
+                mainMenu = new MainMenu();
+                mainMenu.Show();
+            }
         }
 
         private void Tabla_Load(object sender, EventArgs e)

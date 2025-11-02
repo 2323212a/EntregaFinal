@@ -33,10 +33,10 @@ namespace EntregaFinal.Newton
 
         private void btnEmpezar_Click(object sender, EventArgs e)
         {
-           
-            this.DialogResult = DialogResult.OK;
 
-            // Cerramos este formulario.
+            this.Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
             this.Close();
 
         }
