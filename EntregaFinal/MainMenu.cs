@@ -51,10 +51,10 @@ namespace EntregaFinal
             layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50));
 
             // Altura fija para que no se comprima el contenido
-            layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 220)); // primera fila más alta
+            layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 226)); // primera fila más alta
+            layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 223));
             layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 180));
-            layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 180));
-            layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 180));
+            layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 220));
 
             this.Controls.Add(layout);
 
